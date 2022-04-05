@@ -4,7 +4,6 @@ import android.bluetooth.BluetoothAdapter
 import android.content.Context
 import android.location.LocationManager
 import android.os.Build
-import com.app.okra.R
 import com.app.okra.utils.PermissionUtils
 
 class BleValidate(private val context: Context, private var listener: BLEValidaterListener?= null)

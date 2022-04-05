@@ -4,10 +4,8 @@ import com.app.okra.data.network.ApiData
 import com.app.okra.data.network.ApiResult
 import com.app.okra.data.network.ApiService
 import com.app.okra.data.network.BaseRepo
-import com.app.okra.models.ReminderRequest
 import com.app.okra.models.UserDetailResponse
 import kotlinx.coroutines.Dispatchers
-import java.util.HashMap
 
 class ReminderRepoImpl constructor(
     private val apiService: ApiService,

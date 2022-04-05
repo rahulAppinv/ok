@@ -14,13 +14,13 @@ import android.view.ViewConfiguration;
 import android.view.animation.DecelerateInterpolator;
 import android.widget.ListView;
 
+import androidx.recyclerview.widget.RecyclerView;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
-
-import androidx.recyclerview.widget.RecyclerView;
 
 public class RecyclerTouchListener implements RecyclerView.OnItemTouchListener, OnActivityTouchListener {
     private static final String TAG = "RecyclerTouchListener";

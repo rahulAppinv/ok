@@ -19,17 +19,16 @@ import com.app.okra.extension.navigate
 import com.app.okra.extension.navigationOnly
 import com.app.okra.extension.viewModelFactory
 import com.app.okra.models.ItemModel
-import com.app.okra.ui.profile.ItemsAdapter
-import com.app.okra.ui.profile.StaticContentActivity
 import com.app.okra.ui.my_account.setting.contactus.ContactUsActivity
 import com.app.okra.ui.my_account.setting.measurement.MeasurementSettingActivity
 import com.app.okra.ui.my_account.setting.notification.NotificationSettingActivity
+import com.app.okra.ui.profile.ItemsAdapter
+import com.app.okra.ui.profile.StaticContentActivity
 import com.app.okra.utils.*
 import com.app.okra.utils.AppConstants.Intent_Constant.Companion.TYPE
 import kotlinx.android.synthetic.main.activity_settings.*
 import kotlinx.android.synthetic.main.layout_button.view.*
 import kotlinx.android.synthetic.main.layout_header.*
-import kotlinx.coroutines.delay
 
 
 class SettingsActivity : BaseActivity(), View.OnClickListener, Listeners.ItemClickListener {

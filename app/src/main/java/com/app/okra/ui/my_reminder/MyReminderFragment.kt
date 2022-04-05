@@ -12,7 +12,6 @@ import com.app.okra.base.BaseViewModel
 import com.app.okra.data.preference.PreferenceManager
 import com.app.okra.data.repo.ReminderRepoImpl
 import com.app.okra.extension.viewModelFactory
-import com.app.okra.ui.connected_devices.ConnectionStatusFragment
 import com.app.okra.utils.AppConstants
 import com.app.okra.utils.EventLiveData
 import com.app.okra.utils.convertUtc2Local

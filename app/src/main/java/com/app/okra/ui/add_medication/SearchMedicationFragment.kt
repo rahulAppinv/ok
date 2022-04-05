@@ -28,11 +28,8 @@ import com.app.okra.utils.Listeners
 import com.app.okra.utils.dialog
 import com.app.okra.utils.navigateToLogin
 import kotlinx.android.synthetic.main.fragment_search_medication.*
-import kotlinx.android.synthetic.main.fragment_search_medication.rv_medication
 import kotlinx.android.synthetic.main.layout_header.*
-import kotlinx.android.synthetic.main.layout_header.tvTitle
 import java.util.*
-import kotlin.collections.ArrayList
 
 class SearchMedicationFragment : BaseFragment(), Listeners.ItemClickListener {
 

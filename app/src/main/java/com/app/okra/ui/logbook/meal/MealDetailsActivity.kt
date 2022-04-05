@@ -3,12 +3,10 @@ package com.app.okra.ui.logbook.meal
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
-import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import com.app.okra.R
 import com.app.okra.base.BaseActivity
 import com.app.okra.base.BaseViewModel
-import com.app.okra.ui.connected_devices.BluetoothDevicesListFragment
 import com.app.okra.ui.logbook.meal.meal_detail.EditMealDetailsFragment
 
 class MealDetailsActivity : BaseActivity() {

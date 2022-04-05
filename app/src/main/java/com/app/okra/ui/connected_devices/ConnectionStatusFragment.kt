@@ -26,6 +26,7 @@ import com.app.okra.extension.viewModelFactory
 import com.app.okra.models.BLETestData
 import com.app.okra.models.DeviceDataCount
 import com.app.okra.utils.*
+import com.app.okra.utils.MessageConstants.Messages.Companion.sessionMsg
 import kotlinx.android.synthetic.main.fragment_connection_status.*
 
 

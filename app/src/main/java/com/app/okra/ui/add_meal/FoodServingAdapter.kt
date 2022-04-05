@@ -6,7 +6,6 @@ import android.view.ViewGroup
 import androidx.core.content.res.ResourcesCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.app.okra.R
-import com.app.okra.models.Results
 import com.app.okra.models.ServingSize
 import com.app.okra.utils.Listeners
 import kotlinx.android.synthetic.main.row_serving.view.*

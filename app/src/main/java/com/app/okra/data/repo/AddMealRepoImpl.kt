@@ -6,7 +6,6 @@ import com.app.okra.data.network.ApiService
 import com.app.okra.data.network.BaseRepo
 import com.app.okra.models.AddMealRequest
 import com.app.okra.models.FoodRecognintionResponse
-import com.app.okra.models.MealUpdateRequest
 import kotlinx.coroutines.Dispatchers
 import okhttp3.MultipartBody
 

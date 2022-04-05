@@ -6,11 +6,11 @@ import com.app.okra.base.BaseViewModel
 import com.app.okra.data.network.ApiData
 import com.app.okra.data.network.ApiResult
 import com.app.okra.data.repo.SupportRequestRepo
-import com.app.okra.extension.isPasswordValid
-import com.app.okra.models.ContactResponse
 import com.app.okra.models.SupportResponse
-import com.app.okra.ui.boarding.resetPassword.ResetOrChangePasswordViewModel
-import com.app.okra.utils.*
+import com.app.okra.utils.AppConstants
+import com.app.okra.utils.Event
+import com.app.okra.utils.MessageConstants
+import com.app.okra.utils.ToastData
 import java.util.*
 
 class SupportRequestViewModel(private val repo: SupportRequestRepo?) : BaseViewModel() {

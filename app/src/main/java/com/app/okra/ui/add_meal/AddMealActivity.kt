@@ -28,10 +28,7 @@ import com.app.okra.utils.AppConstants.DateFormat.DATE_FORMAT_6
 import com.theartofdev.edmodo.cropper.CropImage
 import com.theartofdev.edmodo.cropper.CropImageView
 import kotlinx.android.synthetic.main.activity_add_meal.*
-import kotlinx.android.synthetic.main.activity_add_meal.cv_image
-import kotlinx.android.synthetic.main.activity_add_meal.tvDate
 import kotlinx.android.synthetic.main.layout_header.*
-import kotlinx.android.synthetic.main.layout_header.tvTitle
 import java.io.File
 import java.util.*
 

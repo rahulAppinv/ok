@@ -1,13 +1,13 @@
 package com.app.okra.ui.notification
 
 import android.content.Context
-import androidx.recyclerview.widget.RecyclerView
-import com.app.okra.ui.notification.NotificationRecyclerAdapter.MyViewHolder
-import android.view.ViewGroup
 import android.view.LayoutInflater
 import android.view.View
+import android.view.ViewGroup
+import androidx.recyclerview.widget.RecyclerView
 import com.app.okra.R
 import com.app.okra.models.Notification
+import com.app.okra.ui.notification.NotificationRecyclerAdapter.MyViewHolder
 import com.app.okra.utils.getPastTimeString
 import kotlinx.android.synthetic.main.row_notification.view.*
 

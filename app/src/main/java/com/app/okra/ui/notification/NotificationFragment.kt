@@ -6,17 +6,18 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
-import androidx.recyclerview.widget.LinearLayoutManager
 import com.app.okra.R
 import com.app.okra.base.BaseFragment
 import com.app.okra.base.BaseViewModel
 import com.app.okra.data.repo.NotificationRepoImpl
-import com.app.okra.extension.*
+import com.app.okra.extension.beGone
+import com.app.okra.extension.beVisible
+import com.app.okra.extension.viewModelFactory
 import com.app.okra.models.Notification
-import com.app.okra.utils.*
+import com.app.okra.utils.Listeners
+import com.app.okra.utils.showCustomAlertDialog
 import com.app.okra.utils.swipe.RecyclerTouchListener
 import kotlinx.android.synthetic.main.fragment_notification.*
-import kotlinx.android.synthetic.main.fragment_notification.swipe_request
 
 class NotificationFragment : BaseFragment(), Listeners.ItemClickListener {
 

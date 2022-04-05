@@ -5,7 +5,6 @@ import com.app.okra.data.network.ApiResult
 import com.app.okra.data.network.ApiService
 import com.app.okra.data.network.BaseRepo
 import com.app.okra.models.InsightResponse
-import com.app.okra.models.TestListResponse
 import kotlinx.coroutines.Dispatchers
 import java.util.*
 

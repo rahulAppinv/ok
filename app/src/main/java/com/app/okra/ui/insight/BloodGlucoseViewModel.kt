@@ -7,7 +7,8 @@ import com.app.okra.data.network.ApiData
 import com.app.okra.data.network.ApiResult
 import com.app.okra.data.repo.BloodGlucoseRepo
 import com.app.okra.models.InsightResponse
-import com.app.okra.utils.*
+import com.app.okra.utils.AppConstants
+import com.app.okra.utils.Event
 import java.util.*
 
 class BloodGlucoseViewModel(private val repo: BloodGlucoseRepo?) : BaseViewModel() {

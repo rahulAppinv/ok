@@ -6,8 +6,6 @@ import okhttp3.ResponseBody
 import retrofit2.Response
 import retrofit2.http.*
 import java.util.*
-import kotlin.collections.ArrayList
-import kotlin.collections.HashMap
 
 interface ApiService {
 

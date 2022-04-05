@@ -1,5 +1,11 @@
 package com.app.okra.ui.my_reminder
 
+import android.app.AlarmManager
+import android.app.DatePickerDialog
+import android.app.PendingIntent
+import android.app.TimePickerDialog
+import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import android.view.Gravity
 import android.view.LayoutInflater
@@ -7,29 +13,19 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.AdapterView
 import androidx.lifecycle.ViewModelProvider
+import com.app.okra.R
 import com.app.okra.base.BaseFragment
 import com.app.okra.base.BaseViewModel
 import com.app.okra.data.repo.ReminderRepoImpl
 import com.app.okra.extension.viewModelFactory
 import com.app.okra.ui.my_account.setting.measurement.CustomSpinnerAdapter
-import kotlinx.android.synthetic.main.fragment_set_reminder.*
-import kotlinx.android.synthetic.main.fragment_set_reminder.spinnerRepeat
-import kotlinx.android.synthetic.main.fragment_set_reminder.tvDate
-import kotlinx.android.synthetic.main.fragment_set_reminder.tvDateValue
-import kotlinx.android.synthetic.main.fragment_set_reminder.tvSetRepeat
-import kotlinx.android.synthetic.main.layout_button.*
-import java.util.*
-
-import android.content.Context
-
-import android.content.Intent
-
-import android.app.*
-import com.app.okra.R
 import com.app.okra.utils.*
 import com.app.okra.utils.AppConstants.DateFormat.DATE_FORMAT_3
 import com.app.okra.utils.AppConstants.DateFormat.DATE_FORMAT_8
+import kotlinx.android.synthetic.main.fragment_set_reminder.*
+import kotlinx.android.synthetic.main.layout_button.*
 import java.text.SimpleDateFormat
+import java.util.*
 
 class SetReminderFragment : BaseFragment() {
     private var mYear: Int = 0

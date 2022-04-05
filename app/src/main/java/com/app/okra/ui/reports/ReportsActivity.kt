@@ -25,8 +25,6 @@ import com.app.okra.utils.getDatePicker
 import com.app.okra.utils.getMinDateForReports
 import kotlinx.android.synthetic.main.activity_reports.*
 import kotlinx.android.synthetic.main.layout_header.*
-import java.lang.Exception
-import java.util.*
 
 
 class ReportsActivity : BaseActivity(),

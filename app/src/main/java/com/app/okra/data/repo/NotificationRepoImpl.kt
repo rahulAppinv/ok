@@ -4,12 +4,9 @@ import com.app.okra.data.network.ApiData
 import com.app.okra.data.network.ApiResult
 import com.app.okra.data.network.ApiService
 import com.app.okra.data.network.BaseRepo
-import com.app.okra.models.InsightResponse
 import com.app.okra.models.NotificationRequest
 import com.app.okra.models.NotificationResponse
-import com.app.okra.models.TestListResponse
 import kotlinx.coroutines.Dispatchers
-import java.util.*
 
 class NotificationRepoImpl constructor(
         private val apiService: ApiService,

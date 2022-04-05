@@ -8,7 +8,6 @@ import com.app.okra.base.BaseViewModel
 import com.app.okra.ui.DashBoardActivity
 import com.app.okra.ui.boarding.login.LoginActivity
 import com.app.okra.ui.tutorial.TutorialsActivity
-import java.util.*
 
 
 class SplashActivity : BaseActivity() {

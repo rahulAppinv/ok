@@ -1,8 +1,6 @@
 package com.app.okra.ui.my_account.setting.measurement
 
 import android.os.Bundle
-import android.text.Editable
-import android.text.TextWatcher
 import android.view.View
 import android.widget.AdapterView
 import androidx.lifecycle.ViewModelProvider

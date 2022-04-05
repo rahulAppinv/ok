@@ -7,7 +7,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.app.okra.R
 import com.app.okra.models.SupportResponse
 import com.app.okra.utils.Listeners
-import com.app.okra.utils.getDateFromISOInDate
 import com.app.okra.utils.getDateFromISOInString
 import kotlinx.android.synthetic.main.row_support_request.view.*
 

@@ -15,6 +15,7 @@ import com.app.okra.data.repo.BloodGlucoseRepoImpl
 import com.app.okra.extension.viewModelFactory
 import com.app.okra.ui.my_account.setting.measurement.CustomSpinnerAdapter
 import com.app.okra.utils.AppConstants
+import com.app.okra.utils.MessageConstants.Messages.Companion.sessionMsg
 import com.app.okra.utils.convertWordsToUpperOrLowerCase
 import com.app.okra.utils.getMealTime
 import com.app.okra.utils.navigateToLogin
@@ -26,19 +27,6 @@ import com.github.mikephil.charting.data.LineDataSet
 import com.github.mikephil.charting.formatter.ValueFormatter
 import com.github.mikephil.charting.interfaces.datasets.ILineDataSet
 import kotlinx.android.synthetic.main.fragment_blood_glucose.*
-import kotlinx.android.synthetic.main.fragment_blood_glucose.chart
-import kotlinx.android.synthetic.main.fragment_blood_glucose.iv_this_month
-import kotlinx.android.synthetic.main.fragment_blood_glucose.iv_this_week
-import kotlinx.android.synthetic.main.fragment_blood_glucose.iv_today
-import kotlinx.android.synthetic.main.fragment_blood_glucose.rl_this_month
-import kotlinx.android.synthetic.main.fragment_blood_glucose.rl_this_week
-import kotlinx.android.synthetic.main.fragment_blood_glucose.rl_today
-import kotlinx.android.synthetic.main.fragment_blood_glucose.spinner
-import kotlinx.android.synthetic.main.fragment_blood_glucose.tv_no_chart
-import kotlinx.android.synthetic.main.fragment_blood_glucose.tv_this_month
-import kotlinx.android.synthetic.main.fragment_blood_glucose.tv_this_week
-import kotlinx.android.synthetic.main.fragment_blood_glucose.tv_today
-import kotlinx.android.synthetic.main.fragment_insulin.*
 
 class BloodGlucoseFragment : BaseFragmentWithoutNav() {
 

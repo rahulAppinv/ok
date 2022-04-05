@@ -3,7 +3,6 @@ package com.app.okra.ui.connected_devices
 import android.bluetooth.BluetoothGatt
 import android.content.DialogInterface
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -19,18 +18,17 @@ import com.app.okra.bluetooth.data.BleDevice
 import com.app.okra.bluetooth.data.BleScanState
 import com.app.okra.bluetooth.exception.BleException
 import com.app.okra.bluetooth.scan.BleScanRuleConfig
-import com.app.okra.bluetooth.utils.BleLog
 import com.app.okra.bluetooth.utils.HexUtil
 import com.app.okra.data.repo.ConnectedDevicesRepoImpl
 import com.app.okra.extension.beGone
 import com.app.okra.extension.beVisible
 import com.app.okra.extension.viewModelFactory
 import com.app.okra.utils.*
+import com.app.okra.utils.MessageConstants.Messages.Companion.sessionMsg
 import com.app.okra.utils.bleValidater.BLEValidaterListener
 import com.app.okra.utils.bleValidater.BleValidate
 import kotlinx.android.synthetic.main.fragment_bluetooth_devices_list.*
 import java.util.*
-import kotlin.collections.ArrayList
 
 
 class BluetoothDevicesListFragment : BaseFragment(),

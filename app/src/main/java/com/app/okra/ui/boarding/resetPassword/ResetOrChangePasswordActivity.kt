@@ -2,26 +2,21 @@ package com.app.okra.ui.boarding.resetPassword
 
 import android.content.Intent
 import android.os.Bundle
-import android.os.Message
 import android.text.Editable
 import android.text.TextWatcher
 import android.text.method.PasswordTransformationMethod
 import android.view.View
 import androidx.lifecycle.ViewModelProvider
-import com.app.okra.ui.MessageActivity
 import com.app.okra.R
 import com.app.okra.base.BaseActivity
 import com.app.okra.base.BaseViewModel
 import com.app.okra.data.repo.ResetPasswordRepoImpl
 import com.app.okra.extension.*
+import com.app.okra.ui.MessageActivity
 import com.app.okra.ui.profile.ProfileFragment
 import com.app.okra.utils.AppConstants
 import com.app.okra.utils.MessageConstants
 import kotlinx.android.synthetic.main.activity_reset_or_change_password.*
-import kotlinx.android.synthetic.main.activity_reset_or_change_password.etPassword
-import kotlinx.android.synthetic.main.activity_reset_or_change_password.iv_eye
-import kotlinx.android.synthetic.main.activity_reset_or_change_password.tvErrorPass
-import kotlinx.android.synthetic.main.activity_reset_or_change_password.tvHeading
 import kotlinx.android.synthetic.main.layout_header.*
 
 class ResetOrChangePasswordActivity : BaseActivity(), View.OnClickListener, TextWatcher {

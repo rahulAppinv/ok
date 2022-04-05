@@ -1,9 +1,10 @@
 package com.app.okra.data.db.dao
 
-import androidx.annotation.NonNull
-import androidx.room.*
+import androidx.room.Dao
+import androidx.room.Insert
+import androidx.room.OnConflictStrategy
+import androidx.room.Query
 import com.app.okra.data.db.table.SearchHistory
-import retrofit2.http.DELETE
 
 @Dao
 interface  SearchHistoryDao {

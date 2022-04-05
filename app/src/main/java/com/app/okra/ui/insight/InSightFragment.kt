@@ -14,7 +14,6 @@ import com.app.okra.base.BaseViewModel
 import com.app.okra.data.repo.BloodGlucoseRepoImpl
 import com.app.okra.extension.navigationOnly
 import com.app.okra.extension.viewModelFactory
-import com.app.okra.ui.profile.profile_details.ProfileInfoActivity
 import com.app.okra.ui.reports.ReportsActivity
 import kotlinx.android.synthetic.main.fragment_in_sight.*
 import kotlinx.android.synthetic.main.layout_button.*

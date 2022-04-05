@@ -1,5 +1,6 @@
 package com.app.okra.ui.logbook.meal
 
+
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -17,17 +18,13 @@ import com.app.okra.extension.beVisible
 import com.app.okra.extension.viewModelFactory
 import com.app.okra.models.MealData
 import com.app.okra.ui.DashBoardActivity
-
-
 import com.app.okra.ui.add_meal.AddMealActivity
-import com.app.okra.ui.add_meal.contract.AddMealContracts
 import com.app.okra.ui.logbook.contract.MealLogContract
-import com.app.okra.ui.logbook.test.TestLogsFragment
-import com.app.okra.utils.*
+import com.app.okra.utils.EventLiveData
+import com.app.okra.utils.Listeners
+import com.app.okra.utils.getDateFromISOInString
+import com.app.okra.utils.navigateToLogin
 import kotlinx.android.synthetic.main.fragment_meal_logs.*
-import kotlinx.android.synthetic.main.fragment_meal_logs.progressBar_loadMore
-import kotlinx.android.synthetic.main.fragment_meal_logs.rv_meal_list
-import kotlinx.android.synthetic.main.fragment_meal_logs.tvNoTestLogged
 
 class MealLogsFragment(val listeners: Listeners.EventClickListener?)
     : BaseFragmentWithoutNav(), Listeners.ItemClickListener {

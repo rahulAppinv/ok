@@ -7,8 +7,9 @@ import com.app.okra.data.network.ApiData
 import com.app.okra.data.network.ApiResult
 import com.app.okra.data.repo.ReminderRepo
 import com.app.okra.models.UserDetailResponse
-import com.app.okra.utils.*
-import kotlinx.android.synthetic.main.fragment_set_reminder.*
+import com.app.okra.utils.AppConstants
+import com.app.okra.utils.Event
+import com.app.okra.utils.MessageConstants
 
 class ReminderViewModel(private val repo: ReminderRepo?) : BaseViewModel() {
 

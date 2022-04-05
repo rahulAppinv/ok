@@ -23,19 +23,11 @@ import com.app.okra.extension.*
 import com.app.okra.ui.DashBoardActivity
 import com.app.okra.ui.boarding.forgotPassword.ForgotPassActivity
 import com.app.okra.ui.boarding.otpVerify.OTPVerifyActivity
-import com.app.okra.ui.boarding.resetPassword.ResetOrChangePasswordViewModel
 import com.app.okra.ui.boarding.signup.SignUpActivity
 import com.app.okra.utils.AppConstants
 import com.app.okra.utils.CustomTypefaceSpan
 import com.app.okra.utils.MessageConstants
-import kotlinx.android.synthetic.main.activity_forgot_pass.*
 import kotlinx.android.synthetic.main.activity_login.*
-import kotlinx.android.synthetic.main.activity_login.etEmail
-import kotlinx.android.synthetic.main.activity_login.etPassword
-import kotlinx.android.synthetic.main.activity_login.iv_eye
-import kotlinx.android.synthetic.main.activity_login.tvErrorEmail
-import kotlinx.android.synthetic.main.activity_login.tvErrorPass
-import kotlinx.android.synthetic.main.activity_signup.*
 import kotlinx.android.synthetic.main.layout_button.*
 
 

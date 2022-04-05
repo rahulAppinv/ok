@@ -8,7 +8,6 @@ import com.app.okra.models.Items
 import com.app.okra.ui.add_meal.ImageViewActivity
 import com.app.okra.ui.add_meal.MealInput
 import com.app.okra.utils.AppConstants
-import com.app.okra.utils.AppConstants.RequestOrResultCodes.MEAL_ADDED
 
 class AddMealContracts :ActivityResultContract<MealInput, Items?>() {
 

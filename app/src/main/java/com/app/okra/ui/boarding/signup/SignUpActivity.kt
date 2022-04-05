@@ -11,7 +11,6 @@ import android.text.method.PasswordTransformationMethod
 import android.text.style.ClickableSpan
 import android.text.style.ForegroundColorSpan
 import android.view.View
-import androidx.core.content.ContextCompat
 import androidx.core.content.res.ResourcesCompat
 import androidx.lifecycle.ViewModelProvider
 import com.app.okra.R
@@ -21,18 +20,15 @@ import com.app.okra.data.preference.PreferenceManager
 import com.app.okra.data.repo.InitialBoardingRepoImpl
 import com.app.okra.extension.*
 import com.app.okra.models.InitialBoardingResponse
-import com.app.okra.ui.DashBoardActivity
 import com.app.okra.ui.boarding.forgotPassword.ForgotPassActivity
 import com.app.okra.ui.boarding.login.InitialBoardingViewModel
 import com.app.okra.ui.boarding.login.LoginActivity
 import com.app.okra.ui.boarding.otpVerify.OTPVerifyActivity
 import com.app.okra.ui.profile.StaticContentActivity
 import com.app.okra.utils.AppConstants
-import com.app.okra.utils.AppConstants.Companion.SCREEN_TYPE
 import com.app.okra.utils.AppConstants.Intent_Constant.Companion.DATA
 import com.app.okra.utils.AppConstants.Intent_Constant.Companion.EMAIL
 import com.app.okra.utils.AppConstants.Intent_Constant.Companion.FROM_SCREEN
-import com.app.okra.utils.AppConstants.Intent_Constant.Companion.NAME
 import com.app.okra.utils.AppConstants.Intent_Constant.Companion.PASS
 import com.app.okra.utils.CustomTypefaceSpan
 import com.app.okra.utils.MessageConstants

@@ -1,7 +1,6 @@
 package com.app.okra.utils
 
 import android.Manifest
-import android.R
 import android.app.Service
 import android.content.Intent
 import android.content.pm.PackageManager
@@ -10,13 +9,11 @@ import android.location.LocationListener
 import android.location.LocationManager
 import android.os.Binder
 import android.os.Bundle
-import android.os.Handler
 import android.os.IBinder
 import android.util.Log
 import androidx.appcompat.app.AlertDialog
 import androidx.core.app.ActivityCompat
 import androidx.localbroadcastmanager.content.LocalBroadcastManager
-import java.util.*
 
 
 class LocationTrack : Service(), LocationListener {

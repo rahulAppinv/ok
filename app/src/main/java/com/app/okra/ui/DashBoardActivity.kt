@@ -4,7 +4,6 @@ import android.content.DialogInterface
 import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
-import androidx.core.view.get
 import com.app.okra.R
 import com.app.okra.base.BaseActivity
 import com.app.okra.base.BaseViewModel
@@ -13,15 +12,13 @@ import com.app.okra.extension.navigate
 import com.app.okra.ui.add_meal.AddMealActivity
 import com.app.okra.ui.add_medication.AddMedicationActivity
 import com.app.okra.ui.connected_devices.BluetoothActivity
-import com.app.okra.ui.connected_devices.ConnectionStatusFragment
-import com.app.okra.ui.home.HomeViewPagerAdapter
 import com.app.okra.ui.home.HomeFragment
+import com.app.okra.ui.home.HomeViewPagerAdapter
 import com.app.okra.ui.insight.InSightFragment
 import com.app.okra.ui.logbook.LogbookFragment
 import com.app.okra.ui.profile.ProfileFragment
 import com.app.okra.utils.*
 import kotlinx.android.synthetic.main.activity_dashboard.*
-import kotlinx.android.synthetic.main.fragment_logbook.*
 import org.jetbrains.annotations.NotNull
 
 class DashBoardActivity : BaseActivity(), Listeners.CustomDialogListener, Listeners.DialogListener {

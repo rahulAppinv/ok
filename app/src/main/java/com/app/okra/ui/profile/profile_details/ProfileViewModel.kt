@@ -5,6 +5,7 @@ import android.net.Uri
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.app.okra.amazonS3.AmazonS3
+import com.app.okra.amazonS3.AmazonS3Callbacks
 import com.app.okra.amazonS3.ImageBean
 import com.app.okra.base.BaseViewModel
 import com.app.okra.data.network.ApiData
@@ -12,12 +13,10 @@ import com.app.okra.data.network.ApiResult
 import com.app.okra.data.repo.ProfileRepo
 import com.app.okra.extension.isPhoneNumberValid
 import com.app.okra.models.UserDetailResponse
-import com.app.okra.ui.boarding.login.InitialBoardingViewModel
 import com.app.okra.utils.*
 import com.app.okra.utils.AppConstants.RequestParam.Companion.age
 import com.app.okra.utils.AppConstants.RequestParam.Companion.mobileNo
 import com.app.okra.utils.AppConstants.RequestParam.Companion.name
-import com.app.sensor.amazonS3.AmazonS3Callbacks
 import java.util.*
 
 class ProfileViewModel(private val repo: ProfileRepo?) : BaseViewModel(), AmazonS3Callbacks {

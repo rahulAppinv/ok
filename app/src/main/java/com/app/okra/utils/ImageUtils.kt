@@ -10,7 +10,6 @@ import android.os.Build
 import android.os.Environment
 import android.provider.MediaStore
 import android.widget.ImageView
-import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.widget.AppCompatImageView
 import androidx.core.content.FileProvider
 import androidx.core.graphics.drawable.RoundedBitmapDrawableFactory

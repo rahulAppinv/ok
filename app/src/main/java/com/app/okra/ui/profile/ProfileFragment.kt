@@ -25,11 +25,11 @@ import com.app.okra.extension.viewModelFactory
 import com.app.okra.models.ItemModel
 import com.app.okra.ui.boarding.resetPassword.ResetOrChangePasswordActivity
 import com.app.okra.ui.connected_devices.BluetoothActivity
-import com.app.okra.ui.profile.profile_details.ProfileInfoActivity
-import com.app.okra.ui.profile.profile_details.ProfileViewModel
 import com.app.okra.ui.my_account.setting.SettingsActivity
 import com.app.okra.ui.my_account.support_request.SupportRequestActivity
 import com.app.okra.ui.my_reminder.MyReminderActivity
+import com.app.okra.ui.profile.profile_details.ProfileInfoActivity
+import com.app.okra.ui.profile.profile_details.ProfileViewModel
 import com.app.okra.ui.tutorial.AppTutorialActivity
 import com.app.okra.utils.*
 import com.theartofdev.edmodo.cropper.CropImage

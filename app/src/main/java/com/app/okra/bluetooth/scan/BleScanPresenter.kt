@@ -11,7 +11,6 @@ import com.app.okra.bluetooth.data.BleMsg
 import com.app.okra.bluetooth.utils.BleLog
 import com.app.okra.bluetooth.utils.HexUtil
 import java.lang.ref.WeakReference
-import java.util.*
 import java.util.concurrent.atomic.AtomicBoolean
 
 @TargetApi(Build.VERSION_CODES.JELLY_BEAN_MR2)

@@ -6,9 +6,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.app.okra.R
 import com.app.okra.models.Items
-import com.app.okra.models.Results
 import com.app.okra.utils.Listeners
-import kotlinx.android.synthetic.main.row_item_name.view.*
 import kotlinx.android.synthetic.main.row_meal.view.*
 
 class FoodItemAdapter (private val data : ArrayList<Items>, val listener : Listeners.ItemClickListener?=null

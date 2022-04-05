@@ -7,7 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.lifecycle.ViewModelProvider
-import androidx.navigation.ui.AppBarConfiguration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.app.okra.R
@@ -16,17 +15,13 @@ import com.app.okra.base.BaseViewModel
 import com.app.okra.data.repo.MedicationRepoImpl
 import com.app.okra.extension.beGone
 import com.app.okra.extension.beVisible
-import com.app.okra.extension.navigate
 import com.app.okra.extension.viewModelFactory
 import com.app.okra.models.MedicationData
 import com.app.okra.ui.DashBoardActivity
-import com.app.okra.ui.add_meal.AddMealActivity
 import com.app.okra.ui.add_medication.AddMedicationActivity
 import com.app.okra.ui.add_medication.MedicationDetailsFragment
-import com.app.okra.ui.logbook.meal.MealLogsFragment
 import com.app.okra.utils.*
 import com.app.okra.utils.AppConstants.Intent_Constant.Companion.RELOAD_SCREEN
-
 import kotlinx.android.synthetic.main.fragment_medication.*
 
 class MedicationLogsFragment(val listeners: Listeners.EventClickListener?) : BaseFragmentWithoutNav(), Listeners.ItemClickListener {

@@ -6,7 +6,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
-import androidx.navigation.Navigation
 import com.app.okra.R
 import com.app.okra.base.BaseFragment
 import com.app.okra.base.BaseViewModel
@@ -15,8 +14,11 @@ import com.app.okra.extension.loadUserImageFromUrl
 import com.app.okra.extension.viewModelFactory
 import com.app.okra.models.MealData
 import com.app.okra.ui.logbook.meal.MealLogsViewModel
-import com.app.okra.utils.*
+import com.app.okra.utils.AppConstants
 import com.app.okra.utils.AppConstants.DateFormat.DATE_FORMAT_1
+import com.app.okra.utils.Listeners
+import com.app.okra.utils.getDateFromISOInString
+import com.app.okra.utils.showCustomAlertDialog
 import kotlinx.android.synthetic.main.fragment_meal_details.*
 import kotlinx.android.synthetic.main.layout_header.*
 

@@ -9,22 +9,19 @@ import androidx.lifecycle.ViewModelProvider
 import com.app.okra.R
 import com.app.okra.base.BaseFragment
 import com.app.okra.base.BaseViewModel
-import com.app.okra.bluetooth.BleManager
 import com.app.okra.bluetooth.data.BleDevice
-import com.app.okra.bluetooth.data.BleScanState
-import com.app.okra.bluetooth.scan.BleScanRuleConfig
 import com.app.okra.data.repo.ConnectedDevicesRepoImpl
 import com.app.okra.extension.beGone
 import com.app.okra.extension.beVisible
 import com.app.okra.extension.viewModelFactory
 import com.app.okra.models.BLEDeviceListData
-import com.app.okra.utils.*
+import com.app.okra.utils.Listeners
+import com.app.okra.utils.MessageConstants
 import com.app.okra.utils.bleValidater.BLEValidaterListener
 import com.app.okra.utils.bleValidater.BleValidate
+import com.app.okra.utils.showCustomAlertDialog
 import kotlinx.android.synthetic.main.fragment_connected_devices_list.*
 import kotlinx.android.synthetic.main.layout_button.*
-import java.util.*
-import kotlin.collections.ArrayList
 
 
 class ConnectedDevicesListFragment : BaseFragment(),

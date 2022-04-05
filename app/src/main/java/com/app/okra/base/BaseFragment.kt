@@ -82,7 +82,7 @@ abstract class BaseFragment :Fragment() {
             }
         }
     }
-    
+
     private fun setErrorObserver(_viewModel: BaseViewModel?, observeError: Boolean) {
         if (observeError) {
             _viewModel?._errorObserver?.observe(viewLifecycleOwner) {

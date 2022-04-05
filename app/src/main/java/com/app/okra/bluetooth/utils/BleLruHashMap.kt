@@ -1,7 +1,6 @@
 package com.app.okra.bluetooth.utils
 
 import com.app.okra.bluetooth.bluetooth.BleBluetooth
-import java.util.*
 
 class BleLruHashMap<K, V>(private val MAX_SIZE: Int) : LinkedHashMap<K, V>(
     Math.ceil(

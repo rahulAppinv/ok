@@ -5,6 +5,7 @@ import android.net.Uri
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.app.okra.amazonS3.AmazonS3
+import com.app.okra.amazonS3.AmazonS3Callbacks
 import com.app.okra.amazonS3.ImageBean
 import com.app.okra.base.BaseViewModel
 import com.app.okra.data.network.ApiData
@@ -12,7 +13,6 @@ import com.app.okra.data.network.ApiResult
 import com.app.okra.data.repo.MedicationRepo
 import com.app.okra.models.*
 import com.app.okra.utils.*
-import com.app.sensor.amazonS3.AmazonS3Callbacks
 import java.util.*
 
 class MedicationViewModel(private val repo: MedicationRepo?) : BaseViewModel() , AmazonS3Callbacks {

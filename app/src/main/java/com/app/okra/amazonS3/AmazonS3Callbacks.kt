@@ -1,6 +1,4 @@
-package com.app.sensor.amazonS3
-
-import com.app.okra.amazonS3.ImageBean
+package com.app.okra.amazonS3
 
 
 interface AmazonS3Callbacks {

@@ -6,9 +6,7 @@ import com.app.okra.base.BaseViewModel
 import com.app.okra.data.preference.PreferenceManager
 import com.app.okra.utils.AppConstants
 import com.app.okra.utils.Event
-import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
-import okhttp3.Dispatcher
 
 class SplashViewModel : BaseViewModel(){
 

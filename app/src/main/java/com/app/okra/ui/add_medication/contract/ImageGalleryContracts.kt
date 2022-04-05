@@ -5,14 +5,7 @@ import android.content.Intent
 import android.provider.MediaStore
 import androidx.activity.result.contract.ActivityResultContract
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.FileProvider
-import com.app.okra.models.Items
-import com.app.okra.ui.add_meal.ImageViewActivity
-import com.app.okra.ui.add_meal.MealInput
 import com.app.okra.utils.AppConstants
-import com.app.okra.utils.AppConstants.RequestOrResultCodes.MEAL_ADDED
-import java.io.File
-import java.io.IOException
 
 class ImageGalleryContracts:ActivityResultContract<Void, Intent?>() {
 

@@ -1,14 +1,11 @@
 package com.app.okra.ui.add_medication
 
-import android.R.attr.*
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.LinearLayout
 import androidx.recyclerview.widget.RecyclerView
 import com.app.okra.R
-import com.app.okra.extension.beGone
 import com.app.okra.extension.loadRoundCornerImageFromUrl
 import com.app.okra.utils.Listeners
 import kotlinx.android.synthetic.main.row_image.view.*

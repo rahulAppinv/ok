@@ -5,6 +5,7 @@ import android.net.Uri
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.app.okra.amazonS3.AmazonS3
+import com.app.okra.amazonS3.AmazonS3Callbacks
 import com.app.okra.amazonS3.ImageBean
 import com.app.okra.base.BaseViewModel
 import com.app.okra.data.network.ApiData
@@ -17,7 +18,6 @@ import com.app.okra.models.FoodRecognintionResponse
 import com.app.okra.utils.Event
 import com.app.okra.utils.MessageConstants
 import com.app.okra.utils.ProgressDialogData
-import com.app.sensor.amazonS3.AmazonS3Callbacks
 import okhttp3.MediaType.Companion.toMediaTypeOrNull
 import okhttp3.MultipartBody
 import okhttp3.RequestBody.Companion.asRequestBody

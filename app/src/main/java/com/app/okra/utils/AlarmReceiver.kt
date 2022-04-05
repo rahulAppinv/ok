@@ -1,7 +1,6 @@
 package com.app.okra.utils
 
 import android.content.BroadcastReceiver
-import android.app.NotificationManager
 import android.content.Context
 import android.content.Intent
 

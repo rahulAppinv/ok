@@ -2,7 +2,8 @@ package com.app.okra.data.repo
 
 import com.app.okra.data.network.ApiData
 import com.app.okra.data.network.ApiResult
-import com.app.okra.models.*
+import com.app.okra.models.MealListResponse
+import com.app.okra.models.MealUpdateRequest
 import java.util.*
 
 interface MealLogsRepo {

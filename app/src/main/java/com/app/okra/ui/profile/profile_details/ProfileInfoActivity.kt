@@ -16,21 +16,11 @@ import com.app.okra.data.preference.PreferenceManager
 import com.app.okra.data.repo.ProfileRepoImpl
 import com.app.okra.extension.*
 import com.app.okra.models.UserDetailResponse
-import com.app.okra.ui.boarding.resetPassword.ResetOrChangePasswordViewModel
 import com.app.okra.ui.profile.ProfileFragment
 import com.app.okra.utils.*
 import com.theartofdev.edmodo.cropper.CropImage
 import com.theartofdev.edmodo.cropper.CropImageView
-import kotlinx.android.synthetic.main.activity_login.*
-
 import kotlinx.android.synthetic.main.activity_profile_info.*
-import kotlinx.android.synthetic.main.activity_profile_info.etEmail
-import kotlinx.android.synthetic.main.activity_profile_info.iv_profile
-import kotlinx.android.synthetic.main.activity_profile_info.iv_upload
-import kotlinx.android.synthetic.main.activity_profile_info.tvName
-import kotlinx.android.synthetic.main.activity_reset_or_change_password.*
-import kotlinx.android.synthetic.main.activity_reset_or_change_password.etPassword
-import kotlinx.android.synthetic.main.fragment_profile.*
 import kotlinx.android.synthetic.main.layout_button.*
 import kotlinx.android.synthetic.main.layout_header.*
 import java.io.File

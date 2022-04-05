@@ -14,7 +14,6 @@ import com.app.okra.bluetooth.exception.OtherException
 import com.app.okra.bluetooth.exception.TimeoutException
 import com.app.okra.bluetooth.utils.BleLog
 import com.app.okra.utils.Listeners
-import java.util.*
 
 @TargetApi(Build.VERSION_CODES.JELLY_BEAN_MR2)
 class BleBluetooth(val device: BleDevice) {

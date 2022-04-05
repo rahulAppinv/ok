@@ -4,7 +4,8 @@ import com.app.okra.data.network.ApiData
 import com.app.okra.data.network.ApiResult
 import com.app.okra.data.network.ApiService
 import com.app.okra.data.network.BaseRepo
-import com.app.okra.models.*
+import com.app.okra.models.MealListResponse
+import com.app.okra.models.MealUpdateRequest
 import kotlinx.coroutines.Dispatchers
 import java.util.*
 

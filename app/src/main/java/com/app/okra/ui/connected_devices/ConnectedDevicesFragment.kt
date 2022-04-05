@@ -17,16 +17,20 @@ import com.app.okra.base.BaseViewModel
 import com.app.okra.bluetooth.BleManager
 import com.app.okra.bluetooth.data.BleDevice
 import com.app.okra.data.repo.ConnectedDevicesRepoImpl
-import com.app.okra.extension.*
+import com.app.okra.extension.beGone
+import com.app.okra.extension.beVisible
+import com.app.okra.extension.navigate
+import com.app.okra.extension.viewModelFactory
 import com.app.okra.models.BLEDeviceListData
 import com.app.okra.ui.my_account.support_request.SupportRequestActivity
-import com.app.okra.utils.*
+import com.app.okra.utils.AppConstants
+import com.app.okra.utils.Listeners
+import com.app.okra.utils.MessageConstants
 import com.app.okra.utils.bleValidater.BLEValidaterListener
 import com.app.okra.utils.bleValidater.BleValidate
 import com.app.okra.utils.bleValidater.GPSContract
-import kotlinx.android.synthetic.main.activity_otp_verify.*
+import com.app.okra.utils.showCustomAlertDialog
 import kotlinx.android.synthetic.main.fragment_connected_devices.*
-import kotlinx.android.synthetic.main.layout_header.*
 
 
 class ConnectedDevicesFragment : BaseFragment(),

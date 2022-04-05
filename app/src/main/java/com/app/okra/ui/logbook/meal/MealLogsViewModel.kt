@@ -6,11 +6,13 @@ import com.app.okra.base.BaseViewModel
 import com.app.okra.data.network.ApiData
 import com.app.okra.data.network.ApiResult
 import com.app.okra.data.repo.MealLogsRepo
-import com.app.okra.models.*
+import com.app.okra.models.CommonData
+import com.app.okra.models.FoodItemsRequest
+import com.app.okra.models.MealListResponse
+import com.app.okra.models.MealUpdateRequest
 import com.app.okra.utils.*
 import com.app.okra.utils.AppConstants.Companion.DATA_LIMIT
 import java.util.*
-import kotlin.collections.ArrayList
 
 class MealLogsViewModel(private val repo: MealLogsRepo?) : BaseViewModel() {
 

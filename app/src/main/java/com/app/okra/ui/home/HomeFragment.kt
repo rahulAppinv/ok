@@ -23,22 +23,17 @@ import com.app.okra.ui.add_meal.AddMealActivity
 import com.app.okra.ui.add_medication.MedicationDetailsFragment
 import com.app.okra.ui.connected_devices.ConnectionStatusFragment
 import com.app.okra.ui.logbook.meal.MealLogsAdapter
-import com.app.okra.ui.logbook.test.TestLogsFragment
 import com.app.okra.ui.notification.NotificationActivity
 import com.app.okra.utils.*
-import com.github.mikephil.charting.components.AxisBase
 import com.github.mikephil.charting.components.XAxis
 import com.github.mikephil.charting.components.YAxis
 import com.github.mikephil.charting.data.Entry
 import com.github.mikephil.charting.data.LineData
 import com.github.mikephil.charting.data.LineDataSet
-import com.github.mikephil.charting.formatter.IndexAxisValueFormatter
 import com.github.mikephil.charting.formatter.ValueFormatter
 import com.github.mikephil.charting.interfaces.datasets.ILineDataSet
 import kotlinx.android.synthetic.main.fragment_home.*
 import java.util.*
-import kotlin.collections.ArrayList
-import kotlin.collections.LinkedHashMap
 
 class HomeFragment : BaseFragmentWithoutNav(), Listeners.ItemClickListener {
 

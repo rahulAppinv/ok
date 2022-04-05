@@ -9,8 +9,8 @@ import android.os.Build
 import android.os.Handler
 import android.os.Looper
 import android.os.Message
-import com.app.okra.bluetooth.callback.*
 import com.app.okra.bluetooth.BleManager
+import com.app.okra.bluetooth.callback.*
 import com.app.okra.bluetooth.data.BleMsg
 import com.app.okra.bluetooth.data.BleWriteState
 import com.app.okra.bluetooth.exception.GattException

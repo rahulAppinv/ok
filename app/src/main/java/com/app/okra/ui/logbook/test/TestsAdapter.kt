@@ -8,8 +8,11 @@ import com.app.okra.R
 import com.app.okra.data.preference.PreferenceManager
 import com.app.okra.extension.getGlucoseToSet
 import com.app.okra.models.Data
-import com.app.okra.utils.*
+import com.app.okra.utils.AppConstants
 import com.app.okra.utils.AppConstants.Companion.ALL_TEXT
+import com.app.okra.utils.Listeners
+import com.app.okra.utils.getDateFromISOInString
+import com.app.okra.utils.getMealTime
 import kotlinx.android.synthetic.main.row_test.view.*
 
 class TestsAdapter (var listener: Listeners.ItemClickListener,

@@ -1,5 +1,6 @@
 package com.app.okra.ui.logbook.test
 
+
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -16,17 +17,13 @@ import com.app.okra.extension.beVisible
 import com.app.okra.extension.viewModelFactory
 import com.app.okra.models.Data
 import com.app.okra.ui.DashBoardActivity
-import com.app.okra.ui.add_meal.AddMealActivity
 import com.app.okra.ui.connected_devices.ConnectionStatusFragment
 import com.app.okra.ui.logbook.test.contract.TestLogContract
 import com.app.okra.utils.EventLiveData
-
-
 import com.app.okra.utils.Listeners
 import com.app.okra.utils.getDateFromISOInString
 import com.app.okra.utils.navigateToLogin
 import kotlinx.android.synthetic.main.fragment_test_logs.*
-import kotlinx.android.synthetic.main.fragment_test_logs.progressBar_loadMore
 
 class TestLogsFragment(val listeners: Listeners.EventClickListener?) : BaseFragmentWithoutNav(),
     Listeners.ItemClickListener {

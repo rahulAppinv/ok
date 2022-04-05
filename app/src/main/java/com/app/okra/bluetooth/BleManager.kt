@@ -10,8 +10,8 @@ import android.os.Build
 import android.os.Looper
 import com.app.okra.bluetooth.bluetooth.BleBluetooth
 import com.app.okra.bluetooth.bluetooth.MultipleBluetoothController
-import com.app.okra.bluetooth.callback.*
 import com.app.okra.bluetooth.bluetooth.SplitWriter
+import com.app.okra.bluetooth.callback.*
 import com.app.okra.bluetooth.data.BleDevice
 import com.app.okra.bluetooth.data.BleScanState
 import com.app.okra.bluetooth.exception.OtherException

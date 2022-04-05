@@ -1,26 +1,18 @@
 package com.app.okra.ui.my_account.support_request
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.app.okra.R
 import com.app.okra.base.BaseFragment
 import com.app.okra.base.BaseViewModel
 import com.app.okra.data.repo.SupportRequestRepoImpl
-import com.app.okra.extension.beGone
-import com.app.okra.extension.beVisible
 import com.app.okra.extension.viewModelFactory
-import com.app.okra.models.ItemModel
 import com.app.okra.models.SupportResponse
-import com.app.okra.utils.AppConstants
-import com.app.okra.utils.Listeners
 import kotlinx.android.synthetic.main.fragment_support_request_details.*
-import kotlinx.android.synthetic.main.fragment_support_request_list.*
 
 /**
  * A fragment representing a list of Items.

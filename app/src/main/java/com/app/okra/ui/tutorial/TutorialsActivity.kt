@@ -15,7 +15,6 @@ import com.app.okra.base.BaseViewModel
 import com.app.okra.extension.navigationOnly
 import com.app.okra.models.TutorialModel
 import com.app.okra.ui.boarding.ChooseActivity
-import com.app.okra.ui.boarding.login.LoginActivity
 import kotlinx.android.synthetic.main.activity_tutorial.*
 
 class TutorialsActivity : BaseActivity() {

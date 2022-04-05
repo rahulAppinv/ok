@@ -8,7 +8,6 @@ import com.amazonaws.mobileconnectors.s3.transferutility.TransferListener
 import com.amazonaws.mobileconnectors.s3.transferutility.TransferState
 import com.amazonaws.mobileconnectors.s3.transferutility.TransferUtility
 import com.amazonaws.services.s3.model.CannedAccessControlList
-import com.app.sensor.amazonS3.AmazonS3Callbacks
 import java.io.File
 import java.util.*
 

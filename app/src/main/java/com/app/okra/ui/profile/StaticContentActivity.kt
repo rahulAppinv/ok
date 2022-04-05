@@ -5,28 +5,16 @@ import android.view.View
 import android.webkit.WebChromeClient
 import android.webkit.WebView
 import android.webkit.WebViewClient
-import androidx.core.content.ContextCompat
-import androidx.lifecycle.ViewModelProvider
-import androidx.recyclerview.widget.LinearLayoutManager
 import com.app.okra.R
 import com.app.okra.base.BaseActivity
 import com.app.okra.base.BaseViewModel
-import com.app.okra.data.preference.PreferenceManager
-import com.app.okra.data.repo.ProfileRepoImpl
 import com.app.okra.extension.beGone
 import com.app.okra.extension.beInvisible
 import com.app.okra.extension.beVisible
-import com.app.okra.extension.viewModelFactory
-import com.app.okra.models.ItemModel
-import com.app.okra.ui.profile.ItemsAdapter
 import com.app.okra.utils.AppConstants
 import com.app.okra.utils.AppConstants.Intent_Constant.Companion.TYPE
-import com.app.okra.utils.Listeners
 import com.app.okra.utils.MessageConstants
-import kotlinx.android.synthetic.main.activity_settings.*
 import kotlinx.android.synthetic.main.activity_static_content.*
-import kotlinx.android.synthetic.main.layout_button.*
-import kotlinx.android.synthetic.main.layout_button.view.*
 import kotlinx.android.synthetic.main.layout_header.*
 
 class StaticContentActivity : BaseActivity(),

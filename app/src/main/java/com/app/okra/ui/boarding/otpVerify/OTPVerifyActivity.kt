@@ -10,12 +10,12 @@ import android.text.style.UnderlineSpan
 import android.view.View
 import androidx.core.content.res.ResourcesCompat
 import androidx.lifecycle.ViewModelProvider
-import com.app.okra.data.repo.OTPVerifyRepoImpl
 import com.app.okra.R
 import com.app.okra.base.BaseActivity
 import com.app.okra.base.BaseViewModel
 import com.app.okra.data.network.ApiData
 import com.app.okra.data.preference.PreferenceManager
+import com.app.okra.data.repo.OTPVerifyRepoImpl
 import com.app.okra.extension.navigate
 import com.app.okra.extension.viewModelFactory
 import com.app.okra.models.InitialBoardingResponse

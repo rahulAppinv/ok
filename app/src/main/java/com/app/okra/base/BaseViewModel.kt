@@ -9,7 +9,6 @@ import com.app.okra.amazonS3.AmazonS3
 import com.app.okra.amazonS3.ImageBean
 import com.app.okra.data.network.ApiData
 import com.app.okra.data.network.ApiResult
-import com.app.okra.data.preference.PreferenceManager
 import com.app.okra.extension.isEmailValid
 import com.app.okra.extension.isPasswordValid
 import com.app.okra.utils.Event

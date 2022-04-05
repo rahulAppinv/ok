@@ -1,12 +1,7 @@
 package com.app.okra.fcm
 
-import android.app.NotificationChannel
 import android.app.NotificationManager
-import android.content.Context
-import android.graphics.Color
-import android.os.Build
 import androidx.core.content.ContextCompat
-import com.app.okra.R
 import com.app.okra.data.preference.PreferenceManager
 import com.app.okra.utils.AppConstants
 import com.app.okra.utils.AppConstants.NotificationConstants.Companion.ADMIN_USER_ACCOUNT_VERIFY

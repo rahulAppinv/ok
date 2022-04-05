@@ -135,7 +135,7 @@ class MessageConstants {
     class Messages {
 
         companion object {
-            var sessionMsg=sessionMsg
+            var sessionMsg="Your login session has been expired."
 
             val msg_account_deleted_successfully: String ="Account deleted successfully."
             val file_downloaded_successfully = "File downloaded successfully"
@@ -184,6 +184,31 @@ class MessageConstants {
             const val no_app_found = "No app found to open downloaded file."
             const val no_device_available = "No device found."
             const val unsaved_meal_data = "You have unsaved meal details. These meal details will be lost."
+
+
+        }
+    }
+    class BleMessages {
+
+        companion object {
+            var bleScanCallback_can_not_be_null ="BleScanCallback can not be Null!"
+            var bleGattCallback_can_not_be_null ="BleGattCallback can not be Null!"
+            var bleNotifyCallback_can_not_be_null ="BleNotifyCallback can not be Null!"
+            var bleIndicateCallback_can_not_be_null ="BleIndicateCallback can not be Null!"
+            var bleWriteCallback_can_not_be_null ="BleWriteCallback can not be Null!"
+            var bleReadCallback_can_not_be_null = "BleReadCallback can not be Null!"
+            var bleRssiCallback_can_not_be_null = "BleRssiCallback can not be Null!"
+            var bleMTUCallback_can_not_be_null = "BleMtuChangedCallback can not be Null!"
+            var device_not_connect ="This device not connect!"
+            var bluetooth_not_enable ="Bluetooth not enable!"
+            var bleScanAndConnectCallback_can_not_be_null = "BleScanAndConnectCallback can not be Null!"
+            var beCareful_current_thread = "Be careful: currentThread is not MainThread!"
+            var beCareful_data_length = "Be careful: data's length beyond 20! Ensure MTU higher than 23, or use spilt write!"
+            var not_Found_Device_Exception_Occurred = "Not Found Device Exception Occurred!"
+            var data_is_null = "data is Null!"
+            var requiredMtu_should_higher = "requiredMtu should higher than 23 !"
+            var requiredMtu_should_higher_2 = "requiredMtu should lower than 512 !"
+            var scanResult_not_null = "scanResult can not be Null!"
 
 
         }

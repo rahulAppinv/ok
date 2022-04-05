@@ -8,9 +8,10 @@ import com.app.okra.data.network.ApiResult
 import com.app.okra.data.repo.SettingRepo
 import com.app.okra.data.repo.SettingRepoImpl
 import com.app.okra.models.ContactResponse
-import com.app.okra.models.MealUpdateRequest
 import com.app.okra.models.SettingRequest
-import com.app.okra.utils.*
+import com.app.okra.utils.Event
+import com.app.okra.utils.MessageConstants
+import com.app.okra.utils.ToastData
 
 class SettingsViewModel(private val repo: SettingRepo?) : BaseViewModel() {
 

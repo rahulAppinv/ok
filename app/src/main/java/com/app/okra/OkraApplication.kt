@@ -1,9 +1,7 @@
 package com.app.okra
 
-import android.app.Activity
 import android.app.Application
 import android.content.Context
-import android.os.Bundle
 
 
 class OkraApplication : Application(){

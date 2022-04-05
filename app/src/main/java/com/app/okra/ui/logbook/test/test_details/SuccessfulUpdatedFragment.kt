@@ -14,8 +14,6 @@ import com.app.okra.ui.logbook.meal.meal_detail.EditMealDetailsFragment
 import com.app.okra.utils.AppConstants
 import com.app.okra.utils.AppConstants.RequestOrResultCodes.RESULT_CODE_MEAL_LOG_UPDATED
 import com.app.okra.utils.AppConstants.RequestOrResultCodes.RESULT_CODE_TEST_LOG_UPDATED
-import com.app.okra.utils.getDateFromISOInString
-import com.app.okra.utils.getMealTime
 import kotlinx.android.synthetic.main.fragment_successful_updated.*
 import kotlinx.android.synthetic.main.layout_button.*
 

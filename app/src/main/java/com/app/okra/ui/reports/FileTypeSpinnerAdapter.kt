@@ -6,7 +6,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.TextView
-import com.app.okra.R
 
 class FileTypeSpinnerAdapter(context: Context, fileTypeArray: Array<String>) :
     ArrayAdapter<String>(context, android.R.layout.simple_spinner_dropdown_item, fileTypeArray) {

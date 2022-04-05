@@ -2,7 +2,6 @@ package com.app.okra.models
 
 import android.os.Parcel
 import android.os.Parcelable
-import android.widget.ArrayAdapter
 
 class AddMedicationRequest(
     var medicineName: String?=null,

@@ -22,10 +22,6 @@ import com.app.okra.ui.my_account.setting.measurement.CustomSpinnerAdapter
 import com.app.okra.utils.*
 import com.app.okra.utils.AppConstants.DateFormat.DATE_FORMAT_5
 import kotlinx.android.synthetic.main.fragment_edit_test_details.*
-import kotlinx.android.synthetic.main.fragment_edit_test_details.tvBloodGlucoseValue
-import kotlinx.android.synthetic.main.fragment_edit_test_details.tvDate
-import kotlinx.android.synthetic.main.fragment_edit_test_details.tvDeviceIdValue
-import kotlinx.android.synthetic.main.fragment_edit_test_details.tvDeviceNameValue
 import kotlinx.android.synthetic.main.layout_header.*
 import java.util.*
 

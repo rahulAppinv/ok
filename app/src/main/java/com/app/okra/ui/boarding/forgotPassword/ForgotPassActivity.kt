@@ -6,18 +6,14 @@ import android.text.Editable
 import android.text.TextWatcher
 import android.view.View
 import androidx.lifecycle.ViewModelProvider
-import com.app.okra.data.repo.ForgotPasswordRepoImpl
 import com.app.okra.R
 import com.app.okra.base.BaseActivity
 import com.app.okra.base.BaseViewModel
+import com.app.okra.data.repo.ForgotPasswordRepoImpl
 import com.app.okra.extension.*
-import com.app.okra.ui.boarding.login.LoginActivity
 import com.app.okra.ui.boarding.otpVerify.OTPVerifyActivity
-import com.app.okra.ui.boarding.resetPassword.ResetOrChangePasswordViewModel
 import com.app.okra.utils.AppConstants
 import kotlinx.android.synthetic.main.activity_forgot_pass.*
-import kotlinx.android.synthetic.main.activity_reset_or_change_password.*
-import kotlinx.android.synthetic.main.layout_button.*
 
 
 class ForgotPassActivity : BaseActivity(), TextWatcher {

@@ -5,15 +5,11 @@ import androidx.lifecycle.MutableLiveData
 import com.app.okra.base.BaseViewModel
 import com.app.okra.data.network.ApiData
 import com.app.okra.data.network.ApiResult
-import com.app.okra.data.repo.BloodGlucoseRepo
 import com.app.okra.data.repo.NotificationRepo
-import com.app.okra.models.InsightResponse
 import com.app.okra.models.NotificationRequest
 import com.app.okra.models.NotificationResponse
-import com.app.okra.models.SettingRequest
-import com.app.okra.utils.*
-import java.util.*
-import kotlin.collections.ArrayList
+import com.app.okra.utils.AppConstants
+import com.app.okra.utils.Event
 
 class NotificationViewModel(private val repo: NotificationRepo?) : BaseViewModel() {
 
