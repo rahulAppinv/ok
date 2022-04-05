@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../../../../../layout/custom_preview.xml" value="0.21302083333333333" />
+        <entry key="../../../../.gradle/caches/transforms-2/files-2.1/c01f37384d07a2a7d2cdc7da037eb344/appcompat-1.3.0/res/layout/support_simple_spinner_dropdown_item.xml" value="0.17117117117117117" />
+        <entry key="../../../../Android/Sdk/platforms/android-30/data/res/layout/simple_spinner_dropdown_item.xml" value="0.17117117117117117" />
+        <entry key="../../../../Android/Sdk/platforms/android-30/data/res/layout/simple_spinner_item.xml" value="0.17117117117117117" />
+        <entry key="src/main/res/drawable/bg_button_grey.xml" value="0.18055555555555555" />
+        <entry key="src/main/res/drawable/calendar_vector.xml" value="0.18055555555555555" />
+        <entry key="src/main/res/drawable/d_edittext_bg.xml" value="0.18055555555555555" />
+        <entry key="src/main/res/layout/activity_common.xml" value="0.17117117117117117" />
+        <entry key="src/main/res/layout/activity_connected_device.xml" value="0.19791666666666666" />
+        <entry key="src/main/res/layout/activity_measurements_setting.xml" value="0.17117117117117117" />
+        <entry key="src/main/res/layout/activity_message.xml" value="0.17117117117117117" />
+        <entry key="src/main/res/layout/activity_reports.xml" value="0.21" />
+        <entry key="src/main/res/layout/activity_settings.xml" value="0.17117117117117117" />
+        <entry key="src/main/res/layout/activity_subscription.xml" value="0.17117117117117117" />
+        <entry key="src/main/res/layout/bottomsheet_final_selected_meal.xml" value="0.17117117117117117" />
+        <entry key="src/main/res/layout/bottomsheet_logs_filter.xml" value="0.17117117117117117" />
+        <entry key="src/main/res/layout/download_dialog.xml" value="0.17117117117117117" />
+        <entry key="src/main/res/layout/fragment_bluetooth_devices_list.xml" value="0.19791666666666666" />
+        <entry key="src/main/res/layout/fragment_in_sight.xml" value="0.19791666666666666" />
+        <entry key="src/main/res/layout/fragment_logbook.xml" value="0.17117117117117117" />
+        <entry key="src/main/res/layout/fragment_profile.xml" value="0.19791666666666666" />
+        <entry key="src/main/res/layout/item_custom_spinner.xml" value="0.17117117117117117" />
+        <entry key="src/main/res/layout/layout_button.xml" value="0.17117117117117117" />
+        <entry key="src/main/res/layout/layout_header.xml" value="0.19791666666666666" />
+        <entry key="src/main/res/layout/layout_loader.xml" value="0.15765765765765766" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

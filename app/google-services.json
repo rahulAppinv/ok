@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "832017265344",
+    "project_id": "okra--dev",
+    "storage_bucket": "okra--dev.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:832017265344:android:78c932f725196afc853325",
+        "android_client_info": {
+          "package_name": "com.app.okra"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "832017265344-aptsh3f4sugv7gv2ibrtu8taop00cndm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAf0ab9pBw8WWy4kOXQpMmIxAKKZccp85I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "832017265344-aptsh3f4sugv7gv2ibrtu8taop00cndm.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "832017265344-3aib4hqbs6euaglo1aoj8v9iorhmui5e.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.osanghc.okra"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
