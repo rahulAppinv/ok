@@ -8,13 +8,13 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentActivity
 import androidx.lifecycle.LifecycleOwner
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import com.app.okra.data.network.ApiManager
 import com.app.okra.data.network.ApiService
 import com.app.okra.utils.MessageConstants
+import com.app.okra.utils.MessageConstants.Messages.Companion.sessionMsg
 import com.app.okra.utils.navigateToLogin
 import com.app.okra.utils.showProgressDialog
 
@@ -27,7 +27,6 @@ abstract class BaseFragment :Fragment() {
     private var progressDialog: androidx.appcompat.app.AlertDialog? = null
     protected var apiService: ApiService = ApiManager.getRetrofit()
     protected var apiServiceAuth: ApiService = ApiManager.getRetrofitAuth()
-
     private var viewModel: BaseViewModel?=null
 
     abstract fun getViewModel() : BaseViewModel?
@@ -51,46 +50,53 @@ abstract class BaseFragment :Fragment() {
         observeError :Boolean = true,
         observeProgress :Boolean = true,
     ) {
-        viewModel?.apply {
-            if(observeError) {
-                _errorObserver.observe(lifecycleOwner) {
-                    val data = it.getContent()!!
-                    showToast(data.message!!)
+        setErrorObserver(viewModel,observeError)
+        setToastObserver(viewModel,observeToast)
+        setProgressObserver(viewModel, observeProgress)
+    }
 
-                    if (data.message == "Your login session has been expired.") {
-                        navigateToLogin(requireActivity())
-
-                        requireActivity().finish()
-                    }
-                }
-            }
-
-            if(observeToast) {
-                _toastObserver.observe(lifecycleOwner) {
-                    val data = it.getContent()!!
-                    showToast(data.message)
-
-                    if (data.message == "Your login session has been expired.") {
-                        navigateToLogin(requireActivity())
-                        requireActivity().finish()
-                    }
-                }
-            }
-
-            if(observeProgress) {
-                _progressDialog.observe(lifecycleOwner) { it ->
-
-                    it?.getContent()?.let {
-                        if (it.status) {
-                            this@BaseFragment.showProgressBar()
-                        } else {
-                            this@BaseFragment.hideProgressBar()
-                        }
+    private fun setProgressObserver(_viewModel: BaseViewModel?, observeProgress: Boolean) {
+        if(observeProgress) {
+            _viewModel?._progressDialog?.observe(viewLifecycleOwner) { it ->
+                it?.getContent()?.let {
+                    if (it.status) {
+                        this@BaseFragment.showProgressBar()
+                    } else {
+                        this@BaseFragment.hideProgressBar()
                     }
                 }
             }
         }
     }
+
+    private fun setToastObserver(_viewModel: BaseViewModel?, observeToast: Boolean) {
+        if(observeToast) {
+            _viewModel?._toastObserver?.observe(viewLifecycleOwner) {
+                val data = it.getContent()!!
+                showToast(data.message)
+
+                if (data.message == sessionMsg) {
+                    navigateToLogin(requireActivity())
+                    requireActivity().finish()
+                }
+            }
+        }
+    }
+    
+    private fun setErrorObserver(_viewModel: BaseViewModel?, observeError: Boolean) {
+        if (observeError) {
+            _viewModel?._errorObserver?.observe(viewLifecycleOwner) {
+                val data = it.getContent()!!
+
+                if (data.message == sessionMsg) {
+                    navigateToLogin(requireActivity())
+
+                    requireActivity().finish()
+                }
+            }
+        }
+    }
+
 
 
     fun showToast( msg: String, context: Context?=null){
@@ -135,7 +141,7 @@ abstract class BaseFragment :Fragment() {
         progressDialog?.let { if (it.isShowing) it.dismiss() }
     }
     protected fun checkAndLogout(message: String) :Boolean {
-        if (message == "Your login session has been expired.") {
+        if (message == sessionMsg) {
             navigateToLogin(requireActivity())
             requireActivity().finish()
             return true

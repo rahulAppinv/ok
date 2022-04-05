@@ -45,7 +45,7 @@ abstract class BaseFragmentWithoutNav : Fragment() {
                 val data = it.getContent()!!
                 showToast(data.message!!)
 
-                if (data.message == "Your login session has been expired.") {
+                if (data.message == sessionMsg) {
                     navigateToLogin(requireActivity())
 
                     requireActivity().finish()
@@ -56,7 +56,7 @@ abstract class BaseFragmentWithoutNav : Fragment() {
                 val data = it.getContent()!!
                 showToast(data.message)
 
-                if (data.message == "Your login session has been expired.") {
+                if (data.message == sessionMsg) {
                     navigateToLogin(requireActivity())
 
                     requireActivity().finish()
@@ -124,7 +124,7 @@ abstract class BaseFragmentWithoutNav : Fragment() {
                     val data = it.getContent()!!
                     showToast(data.message!!)
 
-                    if (data.message == "Your login session has been expired.") {
+                    if (data.message == sessionMsg) {
                         navigateToLogin(requireActivity())
 
                         requireActivity().finish()
@@ -137,7 +137,7 @@ abstract class BaseFragmentWithoutNav : Fragment() {
                     val data = it.getContent()!!
                     showToast(data.message)
 
-                    if (data.message == "Your login session has been expired.") {
+                    if (data.message == sessionMsg) {
                         navigateToLogin(requireActivity())
                         requireActivity().finish()
                     }

@@ -135,6 +135,8 @@ class MessageConstants {
     class Messages {
 
         companion object {
+            var sessionMsg=sessionMsg
+
             val msg_account_deleted_successfully: String ="Account deleted successfully."
             val file_downloaded_successfully = "File downloaded successfully"
             val addtional_notes_not_allowed = "Additional Notes is not allowed to be empty"

@@ -86,7 +86,7 @@ abstract class BaseActivity :AppCompatActivity() {
 
                 showToast(result.message)
 
-                if (result.message == "Your login session has been expired.") {
+                if (result.message == sessionMsg) {
                     navigateToLogin(context)
                     finish()
                 }
@@ -171,7 +171,7 @@ abstract class BaseActivity :AppCompatActivity() {
     }
 
     protected fun checkAndLogout(message: String) :Boolean {
-        if (message == "Your login session has been expired.") {
+        if (message == sessionMsg) {
             navigateToLogin(this)
             finish()
             return true

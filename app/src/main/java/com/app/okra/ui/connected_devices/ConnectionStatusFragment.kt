@@ -297,7 +297,7 @@ class ConnectionStatusFragment : BaseFragment(){
         viewModel._errorObserver.observe(viewLifecycleOwner) {
             val data = it.getContent()!!
 
-            if (data.message == "Your login session has been expired.") {
+            if (data.message == sessionMsg) {
                 showToast( data.message)
                 navigateToLogin(requireActivity())
                 requireActivity().finish()

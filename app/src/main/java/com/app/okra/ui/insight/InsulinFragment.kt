@@ -91,7 +91,7 @@ class InsulinFragment : BaseFragmentWithoutNav() {
             val data = it.getContent()
             data?.message?.let { it1 -> showToast(it1) }
 
-            if (data?.message == "Your login session has been expired.") {
+            if (data?.message == sessionMsg) {
                 navigateToLogin(requireActivity())
                 requireActivity().finish()
             }
