@@ -18,6 +18,24 @@ import com.app.okra.bluetooth.exception.OtherException
 import com.app.okra.bluetooth.scan.BleScanRuleConfig
 import com.app.okra.bluetooth.scan.BleScanner
 import com.app.okra.bluetooth.utils.BleLog
+import com.app.okra.utils.MessageConstants.BleMessages.Companion.beCareful_current_thread
+import com.app.okra.utils.MessageConstants.BleMessages.Companion.beCareful_data_length
+import com.app.okra.utils.MessageConstants.BleMessages.Companion.bleGattCallback_can_not_be_null
+import com.app.okra.utils.MessageConstants.BleMessages.Companion.bleIndicateCallback_can_not_be_null
+import com.app.okra.utils.MessageConstants.BleMessages.Companion.bleMTUCallback_can_not_be_null
+import com.app.okra.utils.MessageConstants.BleMessages.Companion.bleNotifyCallback_can_not_be_null
+import com.app.okra.utils.MessageConstants.BleMessages.Companion.bleReadCallback_can_not_be_null
+import com.app.okra.utils.MessageConstants.BleMessages.Companion.bleRssiCallback_can_not_be_null
+import com.app.okra.utils.MessageConstants.BleMessages.Companion.bleScanAndConnectCallback_can_not_be_null
+import com.app.okra.utils.MessageConstants.BleMessages.Companion.bleScanCallback_can_not_be_null
+import com.app.okra.utils.MessageConstants.BleMessages.Companion.bleWriteCallback_can_not_be_null
+import com.app.okra.utils.MessageConstants.BleMessages.Companion.bluetooth_not_enable
+import com.app.okra.utils.MessageConstants.BleMessages.Companion.data_is_null
+import com.app.okra.utils.MessageConstants.BleMessages.Companion.device_not_connect
+import com.app.okra.utils.MessageConstants.BleMessages.Companion.not_Found_Device_Exception_Occurred
+import com.app.okra.utils.MessageConstants.BleMessages.Companion.requiredMtu_should_higher
+import com.app.okra.utils.MessageConstants.BleMessages.Companion.requiredMtu_should_higher_2
+import com.app.okra.utils.MessageConstants.BleMessages.Companion.scanResult_not_null
 
 @TargetApi(Build.VERSION_CODES.JELLY_BEAN_MR2)
 class BleManager {
@@ -233,9 +251,9 @@ class BleManager {
      * @param callback
      */
     fun scan(callback: BleScanCallback?) {
-        requireNotNull(callback) { "BleScanCallback can not be Null!" }
+        requireNotNull(callback) { bleScanCallback_can_not_be_null }
         if (!isBlueEnable) {
-            BleLog.e("Bluetooth not enable!")
+            BleLog.e(bluetooth_not_enable)
             callback.onScanStarted(false)
             return
         }
@@ -256,9 +274,9 @@ class BleManager {
      * @param callback
      */
     fun scanAndConnect(callback: BleScanAndConnectCallback?) {
-        requireNotNull(callback) { "BleScanAndConnectCallback can not be Null!" }
+        requireNotNull(callback) {bleScanAndConnectCallback_can_not_be_null }
         if (!isBlueEnable) {
-            BleLog.e("Bluetooth not enable!")
+            BleLog.e(bluetooth_not_enable)
             callback.onScanStarted(false)
             return
         }
@@ -279,19 +297,19 @@ class BleManager {
      * @return
      */
     fun connect(bleDevice: BleDevice?, bleGattCallback: BleGattCallback?): BluetoothGatt? {
-        requireNotNull(bleGattCallback) { "BleGattCallback can not be Null!" }
+        requireNotNull(bleGattCallback) { bleGattCallback_can_not_be_null }
         if (!isBlueEnable) {
-            BleLog.e("Bluetooth not enable!")
-            bleGattCallback.onConnectFail(bleDevice, OtherException("Bluetooth not enable!"))
+            BleLog.e(bluetooth_not_enable)
+            bleGattCallback.onConnectFail(bleDevice, OtherException(bluetooth_not_enable))
             return null
         }
         if (Looper.myLooper() == null || Looper.myLooper() != Looper.getMainLooper()) {
-            BleLog.w("Be careful: currentThread is not MainThread!")
+            BleLog.w(beCareful_current_thread)
         }
         if (bleDevice?.device == null) {
             bleGattCallback.onConnectFail(
                 bleDevice,
-                OtherException("Not Found Device Exception Occurred!")
+                OtherException(not_Found_Device_Exception_Occurred)
             )
         } else {
             val bleBluetooth = multipleBluetoothController!!.buildConnectingBle(bleDevice)
@@ -354,10 +372,10 @@ class BleManager {
         useCharacteristicDescriptor: Boolean,
         callback: BleNotifyCallback?
     ) {
-        requireNotNull(callback) { "BleNotifyCallback can not be Null!" }
+        requireNotNull(callback) { bleNotifyCallback_can_not_be_null }
         val bleBluetooth = multipleBluetoothController!!.getBleBluetooth(bleDevice)
         if (bleBluetooth == null) {
-            callback.onNotifyFailure(OtherException("This device not connect!"))
+            callback.onNotifyFailure(OtherException(device_not_connect))
         } else {
             bleBluetooth.newBleConnector()
                 .withUUIDString(uuid_service, uuid_notify)
@@ -398,10 +416,10 @@ class BleManager {
         useCharacteristicDescriptor: Boolean,
         callback: BleIndicateCallback?
     ) {
-        requireNotNull(callback) { "BleIndicateCallback can not be Null!" }
+        requireNotNull(callback) { bleIndicateCallback_can_not_be_null }
         val bleBluetooth = multipleBluetoothController!!.getBleBluetooth(bleDevice)
         if (bleBluetooth == null) {
-            callback.onIndicateFailure(OtherException("This device not connect!"))
+            callback.onIndicateFailure(OtherException(device_not_connect))
         } else {
             bleBluetooth.newBleConnector()
                 .withUUIDString(uuid_service, uuid_indicate)
@@ -537,18 +555,18 @@ class BleManager {
         intervalBetweenTwoPackage: Long,
         callback: BleWriteCallback?
     ) {
-        requireNotNull(callback) { "BleWriteCallback can not be Null!" }
+        requireNotNull(callback) { bleWriteCallback_can_not_be_null }
         if (data == null) {
-            BleLog.e("data is Null!")
-            callback.onWriteFailure(OtherException("data is Null!"))
+            BleLog.e(data_is_null)
+            callback.onWriteFailure(OtherException(data_is_null))
             return
         }
         if (data.size > 20 && !split) {
-            BleLog.w("Be careful: data's length beyond 20! Ensure MTU higher than 23, or use spilt write!")
+            BleLog.w(beCareful_data_length)
         }
         val bleBluetooth = multipleBluetoothController!!.getBleBluetooth(bleDevice)
         if (bleBluetooth == null) {
-            callback.onWriteFailure(OtherException("This device not connect!"))
+            callback.onWriteFailure(OtherException(device_not_connect))
         } else {
             if (split && data.size > splitWriteNum) {
                 SplitWriter().splitWrite(
@@ -577,10 +595,10 @@ class BleManager {
         uuid_read: String?,
         callback: BleReadCallback?
     ) {
-        requireNotNull(callback) { "BleReadCallback can not be Null!" }
+        requireNotNull(callback) {bleReadCallback_can_not_be_null }
         val bleBluetooth = multipleBluetoothController!!.getBleBluetooth(bleDevice)
         if (bleBluetooth == null) {
-            callback.onReadFailure(OtherException("This device is not connected!"))
+            callback.onReadFailure(OtherException(device_not_connect))
         } else {
             bleBluetooth.newBleConnector()
                 .withUUIDString(uuid_service, uuid_read)
@@ -598,10 +616,10 @@ class BleManager {
         bleDevice: BleDevice?,
         callback: BleRssiCallback?
     ) {
-        requireNotNull(callback) { "BleRssiCallback can not be Null!" }
+        requireNotNull(callback) { bleRssiCallback_can_not_be_null }
         val bleBluetooth = multipleBluetoothController!!.getBleBluetooth(bleDevice)
         if (bleBluetooth == null) {
-            callback.onRssiFailure(OtherException("This device is not connected!"))
+            callback.onRssiFailure(OtherException(device_not_connect))
         } else {
             bleBluetooth.newBleConnector().readRemoteRssi(callback)
         }
@@ -619,20 +637,20 @@ class BleManager {
         mtu: Int,
         callback: BleMtuChangedCallback?
     ) {
-        requireNotNull(callback) { "BleMtuChangedCallback can not be Null!" }
+        requireNotNull(callback) { bleMTUCallback_can_not_be_null }
         if (mtu > DEFAULT_MAX_MTU) {
-            BleLog.e("requiredMtu should lower than 512 !")
-            callback.onSetMTUFailure(OtherException("requiredMtu should lower than 512 !"))
+            BleLog.e(requiredMtu_should_higher_2)
+            callback.onSetMTUFailure(OtherException(requiredMtu_should_higher_2))
             return
         }
         if (mtu < DEFAULT_MTU) {
-            BleLog.e("requiredMtu should higher than 23 !")
-            callback.onSetMTUFailure(OtherException("requiredMtu should higher than 23 !"))
+            BleLog.e(requiredMtu_should_higher)
+            callback.onSetMTUFailure(OtherException(requiredMtu_should_higher))
             return
         }
         val bleBluetooth = multipleBluetoothController!!.getBleBluetooth(bleDevice)
         if (bleBluetooth == null) {
-            callback.onSetMTUFailure(OtherException("This device is not connected!"))
+            callback.onSetMTUFailure(OtherException(device_not_connect))
         } else {
             bleBluetooth.newBleConnector().setMtu(mtu, callback)
         }
@@ -649,12 +667,9 @@ class BleManager {
      * specified range.
      */
     fun requestConnectionPriority(bleDevice: BleDevice?, connectionPriority: Int): Boolean {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            val bleBluetooth = multipleBluetoothController!!.getBleBluetooth(bleDevice)
-            return bleBluetooth?.newBleConnector()?.requestConnectionPriority(connectionPriority)
-                ?: false
-        }
-        return false
+        val bleBluetooth = multipleBluetoothController!!.getBleBluetooth(bleDevice)
+        return bleBluetooth?.newBleConnector()?.requestConnectionPriority(connectionPriority)
+            ?: false
     }
 
     /**
@@ -663,8 +678,7 @@ class BleManager {
      * @return
      */
     val isSupportBle: Boolean
-        get() = (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR2
-                && context!!.applicationContext.packageManager.hasSystemFeature(PackageManager.FEATURE_BLUETOOTH_LE))
+        get() = (context!!.applicationContext.packageManager.hasSystemFeature(PackageManager.FEATURE_BLUETOOTH_LE))
 
     /**
      * Open bluetooth
@@ -698,7 +712,7 @@ class BleManager {
 
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     fun convertBleDevice(scanResult: ScanResult?): BleDevice {
-        requireNotNull(scanResult) { "scanResult can not be Null!" }
+        requireNotNull(scanResult) { scanResult_not_null  }
         val bluetoothDevice = scanResult.device
         val rssi = scanResult.rssi
         val scanRecord = scanResult.scanRecord
