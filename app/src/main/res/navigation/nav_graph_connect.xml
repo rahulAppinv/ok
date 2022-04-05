@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_connect"
+    app:startDestination="@id/connectedDevicesFragment">
+
+
+    <fragment
+        android:id="@+id/connectedDevicesFragment"
+        android:name="com.app.okra.ui.connected_devices.ConnectedDevicesFragment"
+        android:label="ConnectedDevicesFragment"
+        tools:layout="@layout/fragment_connected_devices">
+        <action
+            android:id="@+id/action_connectedDevicesFragment_to_bluetoothDeviceListFragment"
+            app:destination="@id/blueToothDeviceListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/blueToothDeviceListFragment"
+        android:name="com.app.okra.ui.connected_devices.BluetoothDevicesListFragment"
+        android:label="BluetoothDevicesListFragment"
+        tools:layout="@layout/fragment_bluetooth_devices_list">
+        <action
+            android:id="@+id/action_blueToothDeviceListFragment_to_connectionStatusFragment"
+            app:destination="@id/connectionStatusFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/connectionStatusFragment"
+        android:name="com.app.okra.ui.connected_devices.ConnectionStatusFragment"
+        android:label="ConnectionStatusFragment"
+        tools:layout="@layout/fragment_connection_status">
+        <action
+            android:id="@+id/action_connectionStatusFragment_to_connectedDevicesFragment"
+            app:destination="@id/connectedDevicesFragment"
+            app:popUpTo="@id/connectedDevicesFragment"
+           />
+    </fragment>
+    <fragment
+        android:id="@+id/connectedDevicesListFragment"
+        android:name="com.app.okra.ui.connected_devices.ConnectedDevicesListFragment"
+        android:label="ConnectedDevicesListFragment"
+        tools:layout="@layout/fragment_connected_devices_list">
+        <action
+            android:id="@+id/action_connectedDevicesListFragment_to_blueToothDeviceListFragment"
+            app:destination="@id/blueToothDeviceListFragment" />
+        <action
+            android:id="@+id/action_connectedDevicesListFragment_to_connectedDevicesFragment"
+            app:destination="@id/connectedDevicesFragment" />
+    </fragment>
+</navigation>

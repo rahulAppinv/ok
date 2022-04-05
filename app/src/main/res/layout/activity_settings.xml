@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/container"
+    android:background="@color/bg_grey">
+
+    <include
+        android:id="@+id/layout"
+        layout="@layout/layout_header"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0"
+        android:layout_margin="@dimen/dp_20"
+        android:elevation="@dimen/dp_5"
+        app:cardBackgroundColor="@color/bg_grey"
+        app:cardCornerRadius="@dimen/dp_25"
+        app:cardElevation="@dimen/dp_5"
+        app:layout_constraintBottom_toTopOf="@id/includeDeleteButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvOptions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <include
+        android:id="@+id/includeDeleteButton"
+        layout="@layout/layout_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_0"
+        app:layout_constraintBottom_toTopOf="@id/includeLogoutButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <include
+        android:id="@+id/includeLogoutButton"
+        layout="@layout/layout_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

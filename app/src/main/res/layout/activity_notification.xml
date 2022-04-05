@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/container"
+    android:id="@+id/swipe_request"
+    android:background="@color/bg_grey">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/back"
+            android:onClick="onBackClick"
+            android:textColor="@color/grey_3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent "
+            tools:ignore="UsingOnClickInXml" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTitle"
+            style="@style/textContainer"
+            android:layout_width="0dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/axiforma_semibold"
+            android:maxLines="2"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_18"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnSave"
+            app:layout_constraintStart_toEndOf="@id/ivBack"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="RtlSymmetry"
+            tools:text="Support Request" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSave"
+            style="@style/btn_style"
+            android:layout_width="@dimen/dp_120"
+            android:layout_marginStart="@dimen/dp_0"
+            android:layout_marginEnd="@dimen/dp_0"
+            android:background="@mipmap/get_started_btn"
+            android:text="@string/clear_all"
+            android:textColor="@color/green_1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="UsingOnClickInXml" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <fragment
+        android:id="@+id/container"
+        style="@style/widthMatchOnly"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:defaultNavHost="true"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout"
+        app:navGraph="@navigation/nav_graph_notification"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

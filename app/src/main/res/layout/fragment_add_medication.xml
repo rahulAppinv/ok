@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/container"
+    android:id="@+id/swipe_request"
+    android:background="@color/bg_grey">
+
+    <include
+        android:id="@+id/layout"
+        layout="@layout/layout_header"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:fontFamily="@font/axiforma_medium"
+        android:gravity="center"
+        android:text="@string/name_text"
+        android:textAllCaps="false"
+        android:textSize="@dimen/sp_16"
+        android:textColor="@color/black_2"
+        android:layout_marginStart="@dimen/dp_25"
+        android:layout_marginTop="@dimen/dp_20"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        style="@style/edit_text_style"
+        android:id="@+id/etName"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/bg_edittext"
+        android:singleLine="true"
+        android:hint="@string/name_text"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:imeOptions="actionNext"
+        android:inputType="text"
+        android:maxLength="50"
+        app:layout_constraintTop_toBottomOf="@+id/tvName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <include
+        android:id="@+id/layout_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/layout_button"
+        android:visibility="visible"
+        android:layout_marginTop="@dimen/dp_30"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

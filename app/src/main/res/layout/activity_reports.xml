@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_grey"
+        tools:context=".ui.reports.ReportsActivity">
+
+    <include
+        android:id="@+id/titleLayout"
+        layout="@layout/layout_header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/subtitleReports"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/dp_25"
+            android:layout_marginTop="@dimen/dp_20"
+            android:lineSpacingExtra="@dimen/dp_5"
+            android:paddingEnd="@dimen/dp_25"
+            android:fontFamily="@font/axiforma_regular"
+            android:text="@string/subtitle_reports"
+            android:textColor="@color/grey_3"
+            android:textSize="@dimen/sp_14"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titleLayout" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/dateRangeTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_25"
+            android:layout_marginTop="@dimen/dp_20"
+            android:fontFamily="@font/axiforma_regular"
+            android:text="@string/date_range"
+            android:textColor="@color/grey_3"
+            android:textSize="@dimen/sp_14"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/subtitleReports" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/startDateTV"
+            style="@style/edit_text_style"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_20"
+            android:paddingStart="@dimen/dp_20"
+            android:background="@mipmap/date_input"
+            android:drawableEnd="@mipmap/calendar"
+            android:drawablePadding="@dimen/dp_5"
+            android:gravity="start|center"
+            tools:text ="24 Nov 2021"
+            android:hint="@string/from"
+            android:singleLine="true"
+            app:layout_constraintEnd_toStartOf="@+id/endDateTV"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dateRangeTV"
+            tools:ignore="RtlSymmetry" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/endDateTV"
+            style="@style/edit_text_style"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_marginEnd="@dimen/dp_25"
+            android:layout_marginStart="@dimen/dp_10"
+            android:paddingStart="@dimen/dp_20"
+            android:gravity="start|center"
+            android:background="@mipmap/date_input"
+            android:drawableEnd="@mipmap/calendar"
+            android:drawablePadding="@dimen/dp_5"
+            android:hint="@string/to"
+            android:singleLine="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/startDateTV"
+            app:layout_constraintTop_toBottomOf="@id/dateRangeTV"
+            tools:ignore="RtlSymmetry" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/fileTypeHintTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_25"
+            android:layout_marginTop="@dimen/dp_20"
+            android:fontFamily="@font/axiforma_regular"
+            android:text="@string/file_type"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_16"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/startDateTV" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_70"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:background="@mipmap/bg_edittext"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fileTypeHintTV">
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_0"
+                android:gravity="top"
+                android:overlapAnchor="false"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+            <TextView
+                android:id="@+id/tvSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/dp_25"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:hint="@string/file_type"
+                android:paddingStart="@dimen/dp_30"
+                android:textColor="@color/red"
+                android:textSize="@dimen/sp_16"
+                app:drawableEndCompat="@mipmap/down_arrow"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="RtlSymmetry" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/downloadBTN"
+            style="@style/btn_style"
+            android:layout_width="@dimen/dp_0"
+            android:layout_marginStart="@dimen/dp_0"
+            android:layout_marginEnd="@dimen/dp_0"
+            android:alpha="0.4"
+            android:background="@mipmap/bg_button"
+            android:enabled="false"
+            android:text="@string/download"
+            android:textColor="@color/green_1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

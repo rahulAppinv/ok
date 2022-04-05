@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/container"
+    android:id="@+id/swipe_request"
+    android:background="@color/bg_grey">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clHeader"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_100"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivBack"
+            tools:ignore="UsingOnClickInXml"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/back"
+            android:onClick="onBackClick"
+            android:textColor="@color/grey_3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent " />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTitle"
+            style="@style/textContainer"
+            tools:ignore="RtlSymmetry"
+            tools:text="Support Request"
+            android:layout_marginBottom="@dimen/dp_12"
+            android:layout_width="@dimen/dp_0"
+            android:ellipsize="end"
+            android:fontFamily="@font/axiforma_semibold"
+            android:gravity="center"
+            android:maxLines="2"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_18"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/clRight"
+            app:layout_constraintStart_toEndOf="@id/ivBack"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvSubTitle"
+            style="@style/textContainer"
+            tools:ignore="RtlSymmetry"
+            tools:text="Support Request"
+            android:layout_width="0dp"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:ellipsize="end"
+            android:fontFamily="@font/axiforma_semibold"
+            android:gravity="center"
+            android:maxLines="2"
+            android:textColor="@color/grey_3"
+            android:textSize="@dimen/sp_16"
+            app:layout_constraintEnd_toStartOf="@+id/clRight"
+            app:layout_constraintStart_toEndOf="@id/ivBack"
+            app:layout_constraintTop_toBottomOf="@id/tvTitle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clRight"
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="@id/ivBack"
+            app:layout_constraintEnd_toEndOf="parent "
+            app:layout_constraintStart_toEndOf="@id/tvTitle"
+            app:layout_constraintTop_toTopOf="parent ">
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/container"
+        style="@style/widthMatchOnly"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:defaultNavHost="true"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clHeader"
+        app:navGraph="@navigation/nav_graph_reminder"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

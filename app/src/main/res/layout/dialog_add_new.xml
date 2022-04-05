@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@drawable/d_grey_top_rounded"
+    android:elevation="@dimen/dp_10"
+    android:paddingTop="@dimen/dp_10"
+    android:paddingBottom="@dimen/dp_20">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_5"
+        android:background="@drawable/bg_button_grey_3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTitle"
+        style="@style/textContainer"
+        android:layout_width="match_parent"
+        android:ellipsize="end"
+        android:layout_marginTop="@dimen/dp_10"
+        android:fontFamily="@font/axiforma_semibold"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="@string/add_new"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_18"
+        app:layout_constraintTop_toBottomOf="@id/view"
+        tools:ignore="RtlSymmetry" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/clAddMed"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_120"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:elevation="@dimen/dp_5"
+        android:padding="@dimen/dp_10"
+        app:cardBackgroundColor="@color/bg_grey"
+        app:cardCornerRadius="@dimen/dp_10"
+        app:cardElevation="@dimen/dp_8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/clAddMeal"
+        card_view:cardUseCompatPadding="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTitle">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivAddMed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@mipmap/medicine"
+                android:textColor="@color/grey_3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent "
+                tools:ignore="UsingOnClickInXml" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvAddMed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dp_80"
+                android:fontFamily="@font/axiforma_medium"
+                android:gravity="center"
+                android:text="@string/add_new_medication"
+                android:textAllCaps="false"
+                android:textColor="@color/black_2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ivAddMed"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/clAddTest"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_120"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:elevation="@dimen/dp_5"
+        android:padding="@dimen/dp_10"
+        app:cardBackgroundColor="@color/bg_grey"
+        app:cardCornerRadius="@dimen/dp_10"
+        app:cardElevation="@dimen/dp_8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        card_view:cardUseCompatPadding="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTitle">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivAddTest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@mipmap/blood_sugar"
+                android:textColor="@color/grey_3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent "
+                tools:ignore="UsingOnClickInXml" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvAddTest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dp_80"
+                android:fontFamily="@font/axiforma_medium"
+                android:gravity="center"
+                android:text="@string/add_new_test"
+                android:textAllCaps="false"
+                android:textColor="@color/black_2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ivAddTest"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/clAddMeal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_120"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:elevation="@dimen/dp_5"
+        android:padding="@dimen/dp_10"
+        app:cardBackgroundColor="@color/bg_grey"
+        app:cardCornerRadius="@dimen/dp_10"
+        app:cardElevation="@dimen/dp_8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/clAddTest"
+        card_view:cardUseCompatPadding="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivAddMeal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_5"
+                android:background="@mipmap/item_with_bg"
+                android:textColor="@color/grey_3"
+                app:layout_constraintBottom_toBottomOf="parent "
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent "
+                tools:ignore="UsingOnClickInXml" />
+
+            <TextView
+                android:id="@+id/tvAddMeal"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dp_60"
+                android:fontFamily="@font/axiforma_medium"
+                android:gravity="center"
+                android:text="@string/add_new_meal"
+                android:textAllCaps="false"
+                android:textColor="@color/black_2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/ivAddMeal"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

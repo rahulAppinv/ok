@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_grey"
+    android:layout_gravity="bottom"
+    android:elevation="@dimen/dp_10"
+    android:paddingTop="@dimen/dp_10"
+    android:paddingBottom="@dimen/dp_20">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/clDiabetesTest"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_120"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:elevation="@dimen/dp_5"
+        android:padding="@dimen/dp_10"
+        app:cardBackgroundColor="@color/bg_grey"
+        app:cardCornerRadius="@dimen/dp_10"
+        app:cardElevation="@dimen/dp_8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        card_view:cardUseCompatPadding="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTitle">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivAddTest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/blood_sugar"
+                android:onClick="onBackClick"
+                android:textColor="@color/grey_3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent "
+                tools:ignore="UsingOnClickInXml" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvAddTest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/axiforma_medium"
+                android:gravity="center"
+                android:text="@string/perform_diabetes_test"
+                android:textAllCaps="false"
+                android:layout_marginBottom="@dimen/dp_12"
+                android:textColor="@color/black_2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ivAddTest"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvDiabetesValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_5"
+                android:fontFamily="@font/axiforma_medium"
+                tools:text="@string/date"
+                android:visibility="gone"
+                android:textAllCaps="false"
+                android:textColor="@color/grey_3"
+                app:layout_constraintStart_toEndOf="@+id/ivAddTest"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvAddTest" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/clAddFood"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_120"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:elevation="@dimen/dp_5"
+        android:padding="@dimen/dp_10"
+        app:cardBackgroundColor="@color/bg_grey"
+        app:cardCornerRadius="@dimen/dp_10"
+        app:cardElevation="@dimen/dp_8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/clDiabetesTest"
+        card_view:cardUseCompatPadding="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivAddFood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/item_with_bg"
+                android:onClick="onBackClick"
+                android:textColor="@color/grey_3"
+                app:layout_constraintBottom_toBottomOf="parent "
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent "
+                tools:ignore="UsingOnClickInXml" />
+
+            <TextView
+                android:id="@+id/tvAddFood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/axiforma_medium"
+                android:gravity="center"
+                android:text="@string/food_log"
+                android:layout_marginBottom="@dimen/dp_12"
+                android:textAllCaps="false"
+                android:textColor="@color/black_2"
+                app:layout_constraintStart_toEndOf="@id/ivAddFood"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvFoodValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_5"
+                android:fontFamily="@font/axiforma_medium"
+                android:paddingTop="@dimen/dp_2"
+                android:visibility="gone"
+                android:text="@string/date"
+                android:textAllCaps="false"
+                android:textColor="@color/grey_3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ivAddFood"
+                app:layout_constraintTop_toBottomOf="@id/tvAddFood" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/clAddMedicine"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_120"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:elevation="@dimen/dp_5"
+        android:padding="@dimen/dp_10"
+        app:cardBackgroundColor="@color/bg_grey"
+        app:cardCornerRadius="@dimen/dp_10"
+        app:cardElevation="@dimen/dp_8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/clAddFood"
+        card_view:cardUseCompatPadding="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivAddMedicine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/medicine"
+                android:onClick="onBackClick"
+                android:textColor="@color/grey_3"
+                app:layout_constraintBottom_toBottomOf="parent "
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent "
+                tools:ignore="UsingOnClickInXml" />
+
+            <TextView
+                android:id="@+id/tvAddMedicine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/axiforma_medium"
+                android:gravity="center"
+                android:text="@string/take_medicine"
+                android:textAllCaps="false"
+                android:layout_marginBottom="@dimen/dp_12"
+                android:textColor="@color/black_2"
+                app:layout_constraintStart_toEndOf="@id/ivAddMedicine"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/tvMedicineValue" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvMedicineValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_5"
+                android:fontFamily="@font/axiforma_medium"
+                android:gravity="top"
+                android:paddingTop="@dimen/dp_2"
+                android:text="@string/date"
+                android:textAllCaps="false"
+                android:visibility="gone"
+                android:textColor="@color/grey_3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ivAddMedicine"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvAddMedicine" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

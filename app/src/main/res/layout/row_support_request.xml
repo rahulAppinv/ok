@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/subContainer">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clCamera"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_100"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/support"
+            android:textColor="@color/grey_3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent "
+            tools:ignore="UsingOnClickInXml" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvRequestTitle"
+            style="@style/heightWrapOnly"
+            android:fontFamily="@font/axiforma_medium"
+            tools:text="@string/camera"
+            android:textAllCaps="false"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textSize="@dimen/sp_16"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:textColor="@color/black_2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tvTime"
+            app:layout_constraintStart_toEndOf="@+id/image"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTime"
+            style="@style/textContainer"
+            android:fontFamily="@font/axiforma_regular"
+            tools:text="@string/camera"
+            android:textAllCaps="false"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textSize="@dimen/sp_14"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:textColor="@color/grey_4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvDetail"
+            style="@style/heightWrapOnly"
+            android:fontFamily="@font/axiforma_regular"
+            tools:text="@string/camera"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textAllCaps="false"
+            android:textColor="@color/grey_4"
+            android:textSize="@dimen/sp_14"
+            android:layout_marginBottom="@dimen/dp_20"
+
+            app:layout_constraintBottom_toBottomOf="@+id/image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/image"
+            app:layout_constraintTop_toBottomOf="@+id/tvRequestTitle" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

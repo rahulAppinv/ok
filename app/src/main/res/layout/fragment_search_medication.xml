@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/container"
+    android:id="@+id/swipe_request"
+    android:background="@color/bg_grey">
+
+    <include
+        android:id="@+id/layout"
+        layout="@layout/layout_header"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        style="@style/edit_text_style"
+        android:id="@+id/etSearch"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/bg_edittext"
+        android:singleLine="true"
+        android:drawableStart="@mipmap/search"
+        android:drawablePadding="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:imeOptions="actionNext"
+        android:inputType="text"
+        android:maxLength="50"
+        android:hint="@string/search"
+        app:layout_constraintTop_toBottomOf="@+id/layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvAddMed"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:fontFamily="@font/axiforma_bold"
+        android:gravity="center"
+        android:text="@string/plus_add_new_medication"
+        android:textAllCaps="false"
+        android:textSize="@dimen/sp_15"
+        android:textColor="@color/green_1"
+        android:layout_marginStart="@dimen/dp_25"
+        android:layout_marginTop="@dimen/dp_20"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etSearch" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvRecentSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:fontFamily="@font/axiforma_semibold"
+        android:gravity="center"
+        android:text="@string/recent_search"
+        android:visibility="visible"
+        android:textAllCaps="false"
+        android:textSize="@dimen/sp_18"
+        android:textColor="@color/black_2"
+        android:layout_marginStart="@dimen/dp_25"
+        android:layout_marginTop="@dimen/dp_20"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvAddMed" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_recent_medication"
+        style="@style/subContainer"
+        android:paddingStart="@dimen/dp_10"
+        android:paddingEnd="@dimen/dp_10"
+        android:orientation="vertical"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginEnd="@dimen/dp_20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvRecentSearch" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvMedicine"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:fontFamily="@font/axiforma_semibold"
+        android:gravity="center"
+        android:text="@string/medicines"
+        android:visibility="gone"
+        android:textAllCaps="false"
+        android:textSize="@dimen/sp_18"
+        android:textColor="@color/black_2"
+        android:layout_marginStart="@dimen/dp_25"
+        android:layout_marginTop="@dimen/dp_20"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rv_recent_medication" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_medication"
+        style="@style/subContainer"
+        android:paddingStart="@dimen/dp_10"
+        android:paddingEnd="@dimen/dp_10"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvMedicine" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

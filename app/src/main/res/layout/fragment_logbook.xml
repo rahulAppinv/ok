@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/container"
+    android:background="@color/bg_grey">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvLogbook"
+        style="@style/textContainer"
+        android:layout_width="@dimen/dp_0"
+        android:layout_marginTop="@dimen/dp_40"
+        android:ellipsize="end"
+        android:fontFamily="@font/axiforma_semibold"
+        android:maxLines="1"
+        android:text="@string/logbook"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_18"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="RtlSymmetry" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivFilter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="-15dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@mipmap/filter"
+        tools:ignore="UsingOnClickInXml" />
+
+    <View
+        android:id="@+id/view_filter"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="45dp"
+        android:visibility="gone"
+        android:background="@drawable/bg_circle_green"
+        app:layout_constraintBottom_toBottomOf="@+id/ivFilter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/ivFilter"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/rl_test_logs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_30"
+        android:layout_marginStart="@dimen/dp_30"
+        app:layout_constraintTop_toBottomOf="@id/tvLogbook"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_test_logs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tests"
+            android:textSize="@dimen/sp_18"
+            android:gravity="center"
+            android:textColor="@color/green_1"
+            android:fontFamily="@font/axiforma_semibold"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_test_logs"
+            android:layout_width="@dimen/dp_15"
+            android:layout_height="@dimen/dp_15"
+            android:layout_below="@id/tv_test_logs"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/dp_5"
+            android:background="@drawable/bg_circle_green"
+            android:backgroundTint="@color/green_1" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_meal_logs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_30"
+        app:layout_constraintTop_toBottomOf="@id/tvLogbook"
+        app:layout_constraintStart_toEndOf="@id/rl_test_logs"
+        app:layout_constraintEnd_toStartOf="@id/rl_medication" >
+
+        <TextView
+            android:id="@+id/tv_meal_logs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/meals"
+            android:textSize="@dimen/sp_18"
+            android:gravity="center"
+            android:textColor="@color/grey_3"
+            android:fontFamily="@font/axiforma_bold"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_meal_logs"
+            android:layout_width="@dimen/dp_15"
+            android:layout_height="@dimen/dp_15"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_below="@id/tv_meal_logs"
+            android:layout_centerInParent="true"
+            android:backgroundTint="@color/bg_grey"
+            android:background="@drawable/bg_circle_green" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_medication"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_30"
+        android:layout_marginEnd="@dimen/dp_30"
+        app:layout_constraintTop_toBottomOf="@id/tvLogbook"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/tv_medication"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/medications"
+            android:textSize="@dimen/sp_18"
+            android:gravity="center"
+            android:textColor="@color/grey_3"
+            android:fontFamily="@font/axiforma_bold"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_medication"
+            android:layout_width="@dimen/dp_15"
+            android:layout_height="@dimen/dp_15"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_below="@id/tv_medication"
+            android:layout_centerInParent="true"
+            android:backgroundTint="@color/bg_grey"
+            android:background="@drawable/bg_circle_green" />
+
+    </RelativeLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/dp_20"
+        app:layout_constraintTop_toBottomOf="@id/rl_test_logs"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline"
+        app:layout_constraintGuide_percent=".50"
+        android:orientation="vertical"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

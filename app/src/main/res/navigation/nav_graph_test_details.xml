@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_test_details"
+    app:startDestination="@id/testDetails">
+
+    <fragment
+        android:id="@+id/testDetails"
+        android:name="com.app.okra.ui.logbook.test.test_details.TestDetailsFragment"
+        tools:layout="@layout/fragment_test_details">
+        <action
+            android:id="@+id/action_testDetails_to_editTestDetails"
+            app:destination="@id/editTestDetails" />
+    </fragment>
+    <fragment
+        android:id="@+id/editTestDetails"
+        android:name="com.app.okra.ui.logbook.test.test_details.EditTestDetailsFragment"
+        android:label="EditTestDetails"
+        tools:layout="@layout/fragment_edit_test_details">
+        <action
+            android:id="@+id/action_editTestDetails_to_successfulUpdatedFragment"
+            app:destination="@id/successfulUpdatedFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/successfulUpdatedFragment"
+        android:name="com.app.okra.ui.logbook.test.test_details.SuccessfulUpdatedFragment"
+        android:label="SuccessfulUpdatedFragment"
+        tools:layout="@layout/fragment_successful_updated"/>
+
+</navigation>

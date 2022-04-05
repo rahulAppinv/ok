@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_medication"
+    app:startDestination="@id/searchMedication">
+
+    <fragment
+        android:id="@+id/searchMedication"
+        android:name="com.app.okra.ui.add_medication.SearchMedicationFragment"
+        tools:layout="@layout/fragment_search_medication">
+        <action
+            android:id="@+id/action_searchMed_to_addMed"
+            app:destination="@id/addMedication" />
+        <action
+            android:id="@+id/action_searchMed_to_medicationDetail"
+            app:destination="@id/medicationDetail" />
+    </fragment>
+    <fragment
+        android:id="@+id/addMedication"
+        android:name="com.app.okra.ui.add_medication.AddMedicationFragment"
+        android:label="addMedication"
+        tools:layout="@layout/fragment_add_medication">
+        <action
+            android:id="@+id/action_addMed_to_medicationDetail"
+            app:destination="@id/medicationDetail" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/medicationDetail"
+        android:name="com.app.okra.ui.add_medication.MedicationDetailsFragment"
+        android:label="medicationDetailFragment"
+        tools:layout="@layout/fragment_medication_detail">
+        <action
+            android:id="@+id/action_medicationDetail_to_editMedicationFragment"
+            app:destination="@id/editMedicationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editMedicationFragment"
+        android:name="com.app.okra.ui.add_medication.EditMedicationFragment"
+        android:label="EditMedicationFragment"
+        tools:layout="@layout/fragment_edit_medication"/>
+
+
+
+</navigation>

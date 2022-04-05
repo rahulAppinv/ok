@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.tutorial.TutorialFragment">
+
+    <ImageView
+        android:id="@+id/ivImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:text="@string/hello_blank_fragment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/app_name" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="@string/app_name"
+        android:visibility="gone"
+        android:textSize="@dimen/sp_22"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:fontFamily="@font/axiforma_semibold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivImage"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvSubHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="@string/app_name"
+        android:gravity="center"
+        android:visibility="gone"
+
+        android:textSize="@dimen/sp_16"
+        android:textColor="@color/black_2"
+        android:lineSpacingExtra="@dimen/dp_8"
+        android:fontFamily="@font/axiforma_medium"
+        android:layout_marginTop="@dimen/dp_20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvHeader"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

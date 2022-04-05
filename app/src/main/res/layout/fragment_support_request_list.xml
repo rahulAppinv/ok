@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    style="@style/container"
+    android:id="@+id/swipe_request"
+    android:background="@color/bg_grey">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        style="@style/container"
+        android:background="@color/bg_grey">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvSupportList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey_2"
+            app:cardCornerRadius="@dimen/dp_20"
+            card_view:cardUseCompatPadding="true"
+            app:cardBackgroundColor="@color/bg_grey"
+            android:elevation="@dimen/dp_10"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_support_request"
+                style="@style/subContainer"
+                android:layout_marginEnd="@dimen/dp_15"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clNoData"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@mipmap/no_support_request"
+                android:textColor="@color/grey_3"
+                app:layout_constraintBottom_toTopOf="@+id/tvNoRequest"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvNoRequest"
+                style="@style/subContainer"
+                android:layout_marginTop="@dimen/dp_40"
+                android:fontFamily="@font/axiforma_semibold"
+                android:gravity="center"
+                android:text="@string/no_support_request"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_20"
+                app:layout_constraintBottom_toTopOf="@+id/tvInfo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/image"
+                tools:ignore="RtlSymmetry" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvInfo"
+                style="@style/subContainer"
+                android:layout_marginTop="@dimen/dp_15"
+                android:fontFamily="@font/axiforma_medium"
+                android:gravity="center"
+                android:lineSpacingExtra="@dimen/dp_10"
+                android:text="@string/please_click"
+                android:textColor="@color/grey_3"
+                android:textSize="@dimen/sp_14"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvNoRequest"
+                tools:ignore="RtlSymmetry" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <ProgressBar
+            android:id="@+id/progressBar_loadMore"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:layout_marginBottom="@dimen/dp_10"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/dp_20"
+            android:background="@null"
+            android:contentDescription="@string/app_name"
+            android:src="@mipmap/plus"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/subContainer">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_100"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/medicine"
+            android:textColor="@color/grey_3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent "
+            tools:ignore="UsingOnClickInXml" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTitle"
+            style="@style/heightWrapOnly"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:ellipsize="end"
+            android:fontFamily="@font/axiforma_medium"
+            android:maxLines="1"
+            android:gravity="start"
+            android:text="@string/blood_glucose"
+            android:textAllCaps="false"
+            android:textColor="@color/black_2"
+            android:textSize="@dimen/sp_16"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tvGlucoseValue"
+            app:layout_constraintStart_toEndOf="@+id/image"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvGlucoseValue"
+            style="@style/textContainer"
+            android:fontFamily="@font/axiforma_semibold"
+            tools:text="@string/camera"
+            android:textAllCaps="false"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textSize="@dimen/sp_14"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:textColor="@color/grey_4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvDetail"
+            style="@style/heightWrapOnly"
+            android:fontFamily="@font/axiforma_regular"
+            tools:text="@string/camera"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textAllCaps="false"
+            android:textColor="@color/grey_4"
+            android:textSize="@dimen/sp_14"
+            android:layout_marginBottom="@dimen/dp_20"
+            app:layout_constraintBottom_toBottomOf="@+id/image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/image"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

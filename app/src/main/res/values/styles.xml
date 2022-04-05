@@ -1,0 +1,170 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+    </style>
+
+    <style name="fill_container">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+
+    <style name="container">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="subContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="subContainer1">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+
+    <style name="subContainer.primaryText">
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="subContainer.secondaryText">
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="heightMatchOnly">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="widthMatchOnly">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+
+    <style name="heightWrapOnly">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="widthWrapOnly">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+
+    <style name="textContainer">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="MyCustomTheme" parent="Theme.AppCompat.Light.Dialog.Alert">>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+
+    </style>
+    <style name="MyCustomTheme2" parent="Theme.AppCompat.Light.Dialog.Alert">>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+
+    </style>
+
+
+
+    <!--    </style>-->
+    <style name="btn_style" >
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="background">@mipmap/bg_button</item>
+        <item name="android:layout_marginStart">@dimen/dp_20</item>
+        <item name="android:layout_marginEnd">@dimen/dp_20</item>
+        <item name="android:layout_marginBottom">@dimen/dp_30</item>
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:textColor">@color/green_1</item>
+        <item name="fontFamily">@font/axiforma_semibold</item>
+        <item name="textAllCaps">false</item>
+    </style>
+    <style name="btn_style_noTransparency" >
+        <item name="android:layout_height">@dimen/dp_45</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="background">@drawable/bg_button_grey</item>
+        <item name="android:layout_marginStart">@dimen/dp_20</item>
+        <item name="android:layout_marginEnd">@dimen/dp_20</item>
+        <item name="android:layout_marginBottom">@dimen/dp_18</item>
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:textColor">@color/white</item>
+       <!-- <item name="fontFamily">@font/metropolis_semibold</item>-->
+        <item name="textAllCaps">false</item>
+    </style>
+
+
+    <style name="edit_text_style" >
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:paddingStart">@dimen/dp_32</item>
+        <item name="android:paddingTop">@dimen/dp_12</item>
+        <item name="android:paddingEnd">@dimen/dp_14</item>
+        <item name="android:paddingBottom">@dimen/dp_12</item>
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/grey_3</item>
+        <item name="android:background">@mipmap/bg_edittext</item>
+        <item name="fontFamily">@font/axiforma_regular</item>
+
+    </style>
+
+    <style name="DialogAnimation">
+      <!--  <item name="android:windowEnterAnimation">@anim/slide_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_down</item>-->
+    </style>
+
+
+    <style name="OtpWidget"/>
+
+    <style name="OtpWidget.OtpView" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@null</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+
+    <style name="style_navigation" parent="Widget.Design.BottomNavigationView">
+        <item name="fontFamily">@font/axiforma_regular</item>
+
+    </style>
+
+
+    <style name="TabTheme" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="fontFamily">@font/axiforma_bold</item>
+    </style>
+
+    <style name="BaseBottomSheetDialog" parent="@style/Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="bottomSheetStyle">@style/BottomSheet</item>
+    </style>
+
+    <style name="BottomSheet" parent="@style/Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="BottomSheetDialogTheme" parent="BaseBottomSheetDialog" />
+
+</resources>

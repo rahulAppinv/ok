@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="@dimen/dp_20"
+    style="@style/subContainer">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvOptionName"
+        style="@style/textContainer"
+        android:layout_width="match_parent"
+        android:drawablePadding="@dimen/dp_16"
+        android:ellipsize="end"
+        android:fontFamily="@font/axiforma_medium"
+        android:maxLines="1"
+        tools:text="Profile"
+        android:textColor="@color/black_2"
+        android:textSize="@dimen/sp_15"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:drawableStart="@mipmap/change_password"
+        android:drawableEnd="@mipmap/change_password"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_marginTop="@dimen/dp_20"
+        android:background="@color/grey_5"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginEnd="@dimen/dp_20"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvOptionName"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

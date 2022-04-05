@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_notification"
+    app:startDestination="@id/notificationFragment">
+
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="com.app.okra.ui.notification.NotificationFragment"
+        android:label="NotificationFragment"
+        tools:layout="@layout/fragment_notification">
+    <action
+        android:id="@+id/action_notificationFragment_to_addSupportRequestFragment"
+        app:destination="@id/addSupportRequestFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addSupportRequestFragment"
+        android:name="com.app.okra.ui.my_account.support_request.AddSupportRequestFragment"
+        android:label="AddSupportRequestFragment"
+        tools:layout="@layout/fragment_add_support_request"/>
+
+</navigation>

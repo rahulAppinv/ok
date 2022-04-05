@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/supportRequestList">
+
+    <fragment
+        android:id="@+id/supportRequestList"
+        android:name="com.app.okra.ui.my_account.support_request.SupportRequestListFragment"
+        tools:layout="@layout/fragment_support_request_list">
+        <action
+            android:id="@+id/action_supportRequestList_to_addSupportRequestFragment"
+            app:destination="@id/addSupportRequestFragment" />
+        <action
+            android:id="@+id/action_supportRequestList_to_supportRequestDetailsFragment"
+            app:destination="@id/supportRequestDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addSupportRequestFragment"
+        android:name="com.app.okra.ui.my_account.support_request.AddSupportRequestFragment"
+        android:label="AddSupportRequestFragment"
+        tools:layout="@layout/fragment_add_support_request"/>
+    <fragment
+        android:id="@+id/supportRequestDetailsFragment"
+        android:name="com.app.okra.ui.my_account.support_request.SupportRequestDetailsFragment"
+        android:label="SupportRequestDetailsFragment" />
+
+
+</navigation>

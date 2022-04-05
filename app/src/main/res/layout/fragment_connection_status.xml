@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/container"
+    android:background="@color/bg_grey">
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivImage"
+        style="@style/subContainer"
+        android:contentDescription="@string/app_name"
+        android:src="@mipmap/welcome_to_ca_mo"
+        app:layout_constraintBottom_toTopOf="@+id/tvInfoText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvInfoText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_40"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:fontFamily="@font/axiforma_semibold"
+        android:gravity="center"
+        android:text="@string/discovering"
+        android:textColor="@color/black_2"
+        android:textSize="@dimen/sp_20"
+        android:lineSpacingExtra="@dimen/dp_5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivImage" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

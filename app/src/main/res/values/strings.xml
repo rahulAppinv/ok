@@ -1,0 +1,380 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Okra</string>
+
+    <!-- Titles-->
+    <string name="title_my_setting">My settings</string>
+    <string name="title_terms_and_condition"><![CDATA[Terms & conditions]]></string>
+    <string name="title_about_us">About us</string>
+    <string name="title_privacy_policy">Privacy policy</string>
+    <string name="title_faq">FAQ</string>
+    <string name="title_notification">Notifications settings</string>
+    <string name="title_measurement_setting">Measurement settings</string>
+    <string name="title_connect_device">Connect device</string>
+    <string name="title_my_support_request">My support request</string>
+    <string name="title_my_support_request_details">Support request details</string>
+    <string name="title_new_support_request">Add new request</string>
+    <string name="title_reports">Generate report</string>
+    <string name="title_my_account">My account</string>
+    <string name="title_personal_details">Personal details</string>
+    <string name="title_connected_devices">Connected devices</string>
+    <string name="title_my_reminders">My reminders</string>
+    <string name="title_take_medicine">Take medicine</string>
+    <string name="title_test_details">Test details</string>
+
+
+
+    <!-- Button Text -->
+    <string name="btn_sign_up">Sign Up</string>
+    <string name="btn_sign_in">Sign In</string>
+    <string name="btn_save">Save</string>
+    <string name="btn_ok" tools:ignore="Typos">Ok</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_delete">Delete</string>
+    <string name="btn_done">Done</string>
+    <string name="btn_connect">Connect</string>
+    <string name="btn_log_out">Log Out</string>
+    <string name="btn_delete_account">Delete Account</string>
+    <string name="btn_submit">Submit</string>
+    <string name="btn_change_password">Change password</string>
+    <string name="btn_add_meal">Add Meal</string>
+    <string name="btn_back_to_signin">Back to Sign In</string>
+
+
+    <!-- Subtitles -->
+    <string name="subtitle_reports">Date range of the report cannot exceed 12 months</string>
+
+    <!-- Reports Activity -->
+    <string name="download">Download</string>
+    <string name="date_Range">Date Range</string>
+    <string-array name="file_type_array">
+        <item>File Type</item>
+        <item>XLSX</item>
+        <item>PDF</item>
+    </string-array>
+    <string name="file_type">File Type</string>
+
+    <!-- Download Dialog Fragment -->
+    <string name="download_progress_title">Download in progress...</string>
+
+
+    <string name="skip">Skip</string>
+    <string name="next">Next</string>
+    <string name="get_started">Get Started</string>
+    <string name="sign_in_with_okra">Sign In With Okra</string>
+    <string name="create_an_account">Create an account</string>
+    <string name="manage_your_account"><![CDATA[Manage your account & get the access to various services provided by the okra.]]></string>
+    <string name="email_id">Email ID</string>
+    <string name="email">Email</string>
+    <string name="serial_no">Serial No. (Optional)</string>
+    <string name="password">Password</string>
+    <string name="new_password">New Password</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="terms_and_condition_text">By clicking on the Sign Up option you agree
+to the Okra Terms &amp; Conditions</string>
+    <string name="already_have_account">Already have an account? Sign In</string>
+    <string name="don_t_have_an_account">Don\'t have an account? Sign Up</string>
+    <string name="allow">Allow</string>
+    <string name="enter_the_email_id"><![CDATA[Enter the Email Id associated with your okra account & we will send a verification code to reset your password]]></string>
+    <string name="send">Send</string>
+    <string name="verification_code_successfully_sent_to_your_mail">Verification code successfully sent to your mail.</string>
+    <string name="verify_your_email">Verify Your Email ID</string>
+    <string name="we_have_sent_a">We have sent a 4 digit verification code to your email id:</string>
+    <string name="verify_your_otp">Verify the OTP to reset your password.</string>
+    <string name="verification_code">Verification Code</string>
+    <string name="invalid_code">Invalid Code</string>
+    <string name="resend_code">Resend Code</string>
+    <string name="verify">Verify</string>
+    <string name="reset_your_password">Reset Your Password</string>
+    <string name="enter_ur_password">Enter your new password below. Your new password must be different from previous used passwords.</string>
+    <string name="enter_ur_password_change_password">Enter your new password below. Your new password must be different from the current password.</string>
+    <string name="password_instruction">Please ensure your password is at least 8 characters long and contains a special character or number.</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="resend_pass">Reset Password</string>
+    <string name="reset_password_successfully">Reset password successfully</string>
+    <string name="header_reset_password_successfully">Reset Password Successfully</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tutorial_header_1">Ready to Simplify Diabetes?</string>
+    <string name="tutorial_sub_header_1">At Okra, we believe that everyone deserves to be healthy That’s we keep our cost low</string>
+    <string name="you_have_successfully">You have successfully updated your Okra account password.</string>
+    <string name="lets_get_started">Let\'s get started</string>
+    <string name="lets_get_started_2">Let\'s Get Started</string>
+    <string name="nice_to_meet_you">Nice to meet you</string>
+    <string name="you_have_successfully_created">You have successfully created your Okra account.</string>
+    <string name="unverified_account_message">Your OKRA account is currently unverified. Please contact the admin to verify your account.</string>
+    <string name="logout">Logout</string>
+
+    <string name="welcome_to_home">Welcome To Home</string>
+    <string name="view_profile">View Profile</string>
+    <string name="phone">Phone No.</string>
+    <string name="age">Age</string>
+    <string name="phone_no">Phone No</string>
+    <string name="change_password">Change Password</string>
+    <string name="enter_your_new">Enter your new password below, your new password must be different from the current password</string>
+    <string name="current_password">Current Password</string>
+
+    <string name="camera">Camera</string>
+    <string name="photo_library">Photo Library</string>
+    <string name="upload_image">Upload Image</string>
+
+    <string name="in_app_notification">In app notifications</string>
+    <string name="push_notification">Push notifications</string>
+
+    <string name="hyper_blood_glucose">Hyper blood glucose value</string>
+    <string name="hypo_blood_glucose">Hypo blood glucose value</string>
+    <string name="blood_glucose_unit">Blood glucose unit</string>
+    <string name="title_contact_us">Contact us</string>
+    <string name="instruction_1">Turn off the meter if it is on.</string>
+    <!--<string name="instruction_2">Long press both button on the front of the device at the same time (3 seconds) until bluetooth symbol showup on the meters\'s display.</string>-->
+    <string name="instruction_2">Long press the left button on the front of the device (3 seconds) until the bluetooth symbol showup on the meter\'s display.</string>
+    <string name="need_help">Need Help?</string>
+    <string name="lets_connect">Let\'s connect your device</string>
+
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="no_support_request">No support request</string>
+    <string name="please_click">Please click on the “+” Icon to start your support request</string>
+    <string name="title">Title</string>
+    <string name="write_your">Write your notes…</string>
+    <string name="max_char">Max. 1000 characters</string>
+    <string name="description">Description</string>
+    <string name="hang_tight">Hang tight!</string>
+    <string name="your_message"><![CDATA[Your message is on the way tot he Okra crew & we will get back to you soon]]></string>
+    <string name="bluetooth">Bluetooth</string>
+    <string name="discovering">Discovering…</string>
+    <string name="alert">Alert</string>
+    <string name="logbook">Logbook</string>
+    <string name="test_logs">Test Logs</string>
+    <string name="meal_logs">Meal Logs</string>
+    <string name="select_filters">Select Filters</string>
+    <string name="date_range">Date Range</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="testing_time">Testing Time</string>
+    <string name="time_period">Time Period</string>
+    <string name="display_all">Display All</string>
+    <string name="before_meal">Before Meal</string>
+    <string name="after_meal">After Meal</string>
+    <string name="post_medicine">Post Medicine</string>
+    <string name="post_workout">Post Workout</string>
+    <string name="control_solution">Control Solution</string>
+    <string name="reset">Reset</string>
+    <string name="apply_filter">Apply Filter</string>
+    <string name="no_test_logged">No Test Logged</string>
+    <string name="no_meal_logged">No Meal Logged</string>
+    <string name="test_details">Test Details</string>
+    <string name="edit_test_details">Edit Test Details</string>
+    <string name="date">Date</string>
+    <string name="blood_glucose">Blood Glucose</string>
+    <string name="blood_pressure">Blood Pressure</string>
+    <string name="insulin_carb">Insulin(ml)</string>
+    <string name="device_id">Device ID</string>
+    <string name="device_name">Device Name</string>
+    <string name="delete_test">Delete Test</string>
+    <string name="are_you_sure_you_want_to_delete_the_added_test">Are you sure you want to delete the added test?</string>
+    <string name="successfully_updated_test_details">Successfully updated test details</string>
+    <string name="your_test_details_has_been_updated_successfully">Your test details has been updated successfully</string>
+    <string name="additional_notes">Additional Notes</string>
+    <string name="today">Today</string>
+    <string name="this_week">This Week</string>
+    <string name="this_month">This Month</string>
+    <string name="meal_details">Meal Details</string>
+    <string name="date_time">Date &amp; Time</string>
+    <string name="food_type">Food Type</string>
+    <string name="calories">Calories</string>
+    <string name="carbs">Carbs</string>
+    <string name="fats">Fats</string>
+    <string name="protein">Protein</string>
+    <string name="delete_meal">Delete Meal</string>
+    <string name="are_you_sure_you_want_to_delete_the_added_meal">Are you sure you want to delete the added meal?</string>
+    <string name="edit_meal_details">Edit Meal Details</string>
+    <string name="new_meal">New Meal</string>
+    <string name="add_new">Add New</string>
+    <string name="add_new_test">Add New Test</string>
+    <string name="add_new_meal">Add New Meal</string>
+    <string name="successfully_updated_meal_details">Successfully updated meal details</string>
+    <string name="your_meal_details_has_been_updated_successfully">Your meal details has been updated successfully</string>
+    <string name="invalid_photo">Invalid Photo</string>
+    <string name="unsaved_meal">Unsaved Meal</string>
+    <string name="this_does_not_look_like_photo">This does not look like photo. Would you like to retake the photo to get more accurate results?</string>
+    <string name="retake">Retake</string>
+    <string name="choose_your_food_item">Choose your food item</string>
+    <string name="perform_diabetes_test">Perform diabetes test</string>
+    <string name="food_log">Food log</string>
+    <string name="time">Time</string>
+    <string name="repeat">Repeat</string>
+    <string name="end_repeat">End Repeat</string>
+    <string name="choose_your_plan">Choose your plan to enjoy the various benefits &amp; start your journey with okra</string>
+    <string name="subcription_instruction_1">Track your Blood glucose level</string>
+    <string name="subcription_instruction_2">Track your Insulin level</string>
+    <string name="subcription_instruction_3">Log meal on the platform</string>
+    <string name="subcription_instruction_4">Generate Blood glucose reports</string>
+    <string name="monthly">Monthly</string>
+    <string name="yearly">Yearly</string>
+    <string name="recurring_monthly_billing">Recurring monthly billing</string>
+    <string name="subscribe">Subscribe</string>
+    <string name="billed_yearly">Billed yearly</string>
+    <string name="cancel_anytime">Cancel anytime</string>
+    <string name="cancel_subscription">To buy the subscription plan you need to click on the “Subscribe” option &amp; you will be redirected to the Okra web page foe the further process. Payment is to be handled by your shopify account. The subscription will get automatically auto renewed unless it is canceled atleast 24 hours before the end of the current period. Your account will be charged for renewal within 24 hours prior to the end of the current period. You can manage &amp; cancel the subscriptions by going to the shopify account settings after purchase.</string>
+    <string name="hello">Hello,</string>
+    <string name="total_tests_logged">Total Tests\nLogged</string>
+    <string name="total_meals_logged">Total Meals\nLogged</string>
+    <string name="total_tests">Total Tests</string>
+    <string name="avg_bg">Avg. BG</string>
+    <string name="avg_insulin">Avg. Insulin</string>
+    <string name="hyper_hypos">Hyper/Hypos</string>
+    <string name="est_HbA1c">Est. HbA1c</string>
+    <string name="carbs_counts">Carbs Counts</string>
+    <string name="insights">Insights</string>
+    <string name="insulin">Insulin</string>
+    <string name="blood_glucose_mg_dL">Blood glucose (mg/dL)</string>
+    <string name="please_select_image">Please select image</string>
+    <string name="please_select_date">Please select date</string>
+    <string name="please_select_calories">Please select calories</string>
+    <string name="please_select_carbs">Please select carbs</string>
+    <string name="please_select_fat">Please select fat</string>
+    <string name="please_select_protein">Please select protein</string>
+    <string name="please_select_food_type">Please select food type</string>
+    <string name="serving_size">Serving Size</string>
+    <string name="no_of_Servings">Number of servings</string>
+    <string name="no_of_Servings_2">Number Of Servings</string>
+    <string name="no_of_Servings_3">No. of Servings</string>
+    <string name="text_to_show">Looks like all food items are logged, you can now save your meal</string>
+    <string name="looks_good">Looks Good</string>
+    <string name="your_login_session_has_been_expired">Your login session has been expired.</string>
+    <string name="selected_time_should_not_be_lesser_than_current_time">Selected time should not be lesser than current time.</string>
+    <string name="saved_successfully">Saved Successfully</string>
+    <string name="cal">cal</string>
+    <string name="gm">gm</string>
+    <string name="food_logs">Food Logs</string>
+    <string name="average_blood_glucose_mg_dL">Average Blood glucose (mg/dL)</string>
+    <string name="no_chart_data_available">No chart data available.</string>
+    <string name="number_of_readings">Number of readings</string>
+    <string name="no_notification">No Notification</string>
+    <string name="clear">Clear</string>
+    <string name="please_open_blue">Please turn on your bluetooth</string>
+    <string name="notification">Notification</string>
+    <string name="earlier">Earlier</string>
+    <string name="clear_notifications">Clear Notifications</string>
+    <string name="clear_notification">Clear Notification</string>
+    <string name="are_you_sure_you_want_to_clear_all_your_notifications">Are you sure you want to clear all your notifications?</string>
+    <string name="are_you_sure_you_want_to_clear_this_your_notifications">Are you sure you want to clear this notification?</string>
+    <string name="clear_all">Clear all</string>
+    <string name="add_new_medication">Add New Medication</string>
+    <string name="tests">Tests</string>
+    <string name="meals">Meals</string>
+    <string name="medication">Medication</string>
+    <string name="medications">Medications</string>
+    <string name="all">All</string>
+    <string name="pill">Pill</string>
+    <string name="pill_inSmall">pill</string>
+    <string name="pills">Pills</string>
+    <string name="pills_inSmall">pills</string>
+    <string name="mg">mg</string>
+    <string name="ml">ml</string>
+    <string name="plus_add_new_medication">+ Add New Medication</string>
+    <string name="recent_search">Recent Search</string>
+    <string name="name_text">Name</string>
+    <string name="add_medicine">Add Medicine</string>
+    <string name="please_enter_medicine_name">Please enter medicine name</string>
+    <string name="what_unit_of_measure_would_you_like_to_use">What unit of measure would you like to use?</string>
+    <string name="add">Add</string>
+    <string name="no_medication">No Medication</string>
+    <string name="please_enter_medicine_unit">Please enter medicine unit</string>
+    <string name="details">Details</string>
+    <string name="unit">Unit</string>
+    <string name="quantity">Quantity</string>
+    <string name="medicines">Medicines</string>
+    <string name="none_of_the_below_tap_here">None of the below? Tap here.</string>
+    <string name="tap_here_to_edit">Tap here to edit</string>
+    <string name="add_manually">Add Manually</string>
+    <string name="take_medicine">Take Medicine</string>
+    <string name="app_tutorial">App Tutorial</string>
+    <string name="app_tutorial_message">Need help getting started? Check out these quick tips &amp; discover how Okra can simplify you daily diabetes care.</string>
+    <string name="log_test_and_set_reminder">Log test &amp; set reminder:</string>
+    <string name="heading_add_new_test">Add New Test</string>
+    <string name="heading_add_medication">Add Medication</string>
+    <string name="app_tutorial_message1">1. Click on  </string>
+    <string name="app_tutorial_message2">button\n2. Click on the \"Add test\" option to log the test.\n3. Visit My profile &amp; click on the \"My reminders\" option to add the reminders.</string>
+    <string name="app_tutorial_test_message1">1. Once you finished taking your test, click on the </string>
+    <string name="app_tutorial_test_message2">button.\n2. Click on the “+Add New Test” option and connect your OKRA Pro to your mobile device.
+\n3. Click on the ^ button for 3 seconds until you see the bluetooth pairing mode.
+\n4. Find the OKRA Pro device on the application and connect.
+\n5. Once the device has been connected, return to your logbook to see your latest test results.</string>
+   <string name="app_tutorial_med_message1">1. Click on the </string>
+    <string name="app_tutorial_med_message2">button and click on the “Add New Medication” option.
+        \n2. Choose “+Add New Medication” and enter Insulin.
+        \n3. When entering your insulin measurements, please make sure to choose the “ml” option. It will not work in “mg” or “pill”.
+        \n4. When you return to your logbook or insights, you will see that your medication has been added.</string>
+
+    <!-- BLE -->
+
+    <string name="notifyTitle">Prompt</string>
+    <string name="gpsNotifyMsg">Current mobile phone scanning Bluetooth needs to open the positioning function</string>
+    <string name="setting">Go to settings</string>
+
+    <string name="start_scan">Start scanning</string>
+    <string name="stop_scan">Stop scanning</string>
+    <string name="expand_search_settings">Expand search settings</string>
+    <string name="retrieve_search_settings">Retrieve search settings</string>
+    <string name="connect_fail">connection failed</string>
+    <string name="active_disconnected">disconnect</string>
+    <string name="disconnected">Connection disconnect</string>
+    <string name="select_operation_type">Select operation type</string>
+    <string name="characteristic">Characteristic</string>
+    <string name="data_changed">Data changes:</string>
+    <string name="read">Read</string>
+    <string name="write">Write</string>
+    <string name="open_notification">Open notification</string>
+    <string name="close_notification">Close notification</string>
+    <string name="service_list">Service list</string>
+    <string name="characteristic_list">Characteristic list</string>
+    <string name="console">Console</string>
+    <string name="device_broadcast_name">Device broadcast name：</string>
+    <string name="name">Name</string>
+    <string name="mac">MAC:</string>
+    <string name="service">Service</string>
+    <string name="type">Service type (main service)</string>
+    <string name="scan_setting">Below, you can configure the conditions that you need to scan the device, which can be empty</string>
+    <string name="setting_name">Enter a broadcast name for Bluetooth devices, separated by English commas</string>
+    <string name="setting_mac">Enter Bluetooth device MAC</string>
+    <string name="setting_uuid">Enter Bluetooth device UUID, separated by commas in English</string>
+    <string name="input_hex">Please enter the HEX format command</string>
+    <string name="connect">Connect</string>
+    <string name="connected">Connected</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="enter">Enter</string>
+    <string name="location">Location</string>
+    <string name="no_device_available">No device available.</string>
+    <string name="reports">Reports</string>
+    <string name="i_am_new_here">I am new here</string>
+    <string name="i_have_been">I have been here before</string>
+    <string name="unverified_user">Unverified User</string>
+    <string name="add_image">Add Image</string>
+    <string name="tags">Tags</string>
+    <string name="write_tags">Write your tags here...</string>
+    <string name="how_to_feel">How to feel after medicine</string>
+    <string name="share">Share</string>
+    <string name="feeling_after_medicine">How to feel after medicine</string>
+    <string name="images">Images</string>
+    <string name="scan">Scan</string>
+    <string name="device_connected_successfully">"Device connected successfully "</string>
+    <string name="retrieving_data">"Retrieving data from the okra device "</string>
+    <string name="no_connected_device">No Device Connected</string>
+    <string name="please_click_on_the">Please click on the “Connect device” option to enjoy the services of the platform</string>
+    <string name="feeling">Feeling</string>
+    <string name="write_feeling">Write your feelings here...</string>
+    <string name="units">Units</string>
+    <string name="unit_type">Unit Type</string>
+    <string name="okra">Okra</string>
+    <string name="search">Search</string>
+    <string name="connected_devices">Connected Devices</string>
+    <string name="_1">1</string>
+    <string name="month">/month</string>
+    <string name="year">/year</string>
+    <string name="_0">0</string>
+
+
+</resources>

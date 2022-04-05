@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dp_15"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/textContainer"
+        android:id="@+id/tv_serving_name"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_grey_green_outline_rounded"
+        android:fontFamily="@font/axiforma_medium"
+        tools:text="@string/reset_password_successfully"
+        android:padding="@dimen/dp_10"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

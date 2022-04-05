@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/container"
+    android:background="@color/bg_grey">
+
+    <include
+        android:id="@+id/layoutHeader"
+        layout="@layout/layout_header" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTestDetails"
+        style="@style/textContainer"
+        android:layout_width="@dimen/dp_0"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginStart="@dimen/dp_20"
+        android:ellipsize="end"
+        android:fontFamily="@font/axiforma_semibold"
+        android:maxLines="1"
+        android:text="@string/test_details"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_18"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layoutHeader"
+        tools:ignore="RtlSymmetry" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/dp_5"
+        android:padding="@dimen/dp_10"
+        app:cardBackgroundColor="@color/bg_grey"
+        app:cardCornerRadius="@dimen/dp_10"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_5"
+        app:cardElevation="@dimen/dp_8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTestDetails"
+        card_view:cardUseCompatPadding="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/dp_20">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:ellipsize="end"
+                android:fontFamily="@font/axiforma_medium"
+                android:gravity="center"
+                android:maxLines="2"
+                android:text="@string/date_time"
+                android:textColor="@color/black_2"
+                android:textSize="@dimen/sp_16"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvDateValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/axiforma_regular"
+                android:gravity="center"
+                android:textColor="@color/grey_4"
+                android:textSize="@dimen/sp_14"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Apr 15 2021"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTestingTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:ellipsize="end"
+                android:layout_marginTop="@dimen/dp_15"
+                android:fontFamily="@font/axiforma_medium"
+                android:gravity="center"
+                android:maxLines="2"
+                android:text="@string/testing_time"
+                android:textColor="@color/black_2"
+                android:textSize="@dimen/sp_16"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvDate" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTestingTimeValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/axiforma_regular"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/dp_15"
+                android:textColor="@color/grey_4"
+                android:textSize="@dimen/sp_14"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvDate"
+                tools:text="Before Meal"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvBloodGlucose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:ellipsize="end"
+                android:layout_marginTop="@dimen/dp_15"
+                android:fontFamily="@font/axiforma_medium"
+                android:gravity="center"
+                android:maxLines="2"
+                android:text="@string/blood_glucose"
+                android:textColor="@color/black_2"
+                android:textSize="@dimen/sp_16"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvTestingTime" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvBloodGlucoseValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/axiforma_regular"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/dp_15"
+                android:textColor="@color/grey_4"
+                android:textSize="@dimen/sp_14"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvTestingTime"
+                tools:text="114 mg/dL"/>
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clDevice"
+            style="@style/subContainer"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="@dimen/dp_15"
+
+            app:layout_constraintTop_toBottomOf="@id/tvBloodGlucose"
+            >
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvDeviceId"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:ellipsize="end"
+                android:fontFamily="@font/axiforma_medium"
+                android:maxLines="2"
+                android:text="@string/device_id"
+                android:textColor="@color/black_2"
+                android:textSize="@dimen/sp_16"
+                app:layout_constraintEnd_toStartOf="@+id/tvDeviceIdValue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvDeviceIdValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/axiforma_regular"
+                android:gravity="end"
+                android:textColor="@color/grey_4"
+                android:textSize="@dimen/sp_14"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/tvDeviceId"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:text="64611512"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clDeviceName"
+            style="@style/subContainer"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="@dimen/dp_15"
+
+            app:layout_constraintTop_toBottomOf="@id/clDevice"
+            >
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvDeviceName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:ellipsize="end"
+                android:fontFamily="@font/axiforma_medium"
+                android:maxLines="2"
+                android:text="@string/device_name"
+                android:textColor="@color/black_2"
+                android:textSize="@dimen/sp_16"
+                app:layout_constraintEnd_toStartOf="@+id/tvDeviceNameValue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvDeviceNameValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/axiforma_regular"
+                android:gravity="end"
+                android:textColor="@color/grey_4"
+                android:textSize="@dimen/sp_14"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/tvDeviceName"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:text="Glucometer"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

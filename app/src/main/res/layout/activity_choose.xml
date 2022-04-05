@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_grey">
+
+    <ImageView
+        android:id="@+id/ivIcon"
+        style="@style/textContainer"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_200"
+        android:drawablePadding="@dimen/dp_10"
+        android:gravity="center"
+        android:textSize="@dimen/sp_36"
+        android:src="@mipmap/ic_splash"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/app_name" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clNewHere"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_120"
+            android:background="@mipmap/iamnew_btn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivIcon"
+            android:layout_marginTop="@dimen/dp_10">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivAddTest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_60"
+                android:background="@mipmap/ic_new_here"
+                android:textColor="@color/grey_3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent "
+                tools:ignore="UsingOnClickInXml" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvNewHere"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dp_60"
+                android:layout_marginStart="@dimen/dp_20"
+                android:fontFamily="@font/axiforma_semibold"
+                android:text="@string/i_am_new_here"
+                android:textAllCaps="false"
+                android:textSize="@dimen/sp_16"
+                android:textColor="@color/black_2"
+                app:drawableEndCompat="@mipmap/side_arrow"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ivAddTest"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clHaveBeenBefore"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_120"
+            android:background="@mipmap/iamnew_btn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/clNewHere">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivHaveBeenBefore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_60"
+                android:background="@mipmap/already_have_account"
+
+                android:textColor="@color/grey_3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent "
+                tools:ignore="UsingOnClickInXml" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvHaveBeenBefore"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dp_60"
+                android:layout_marginStart="@dimen/dp_20"
+                android:fontFamily="@font/axiforma_semibold"
+                android:text="@string/i_have_been"
+                android:textAllCaps="false"
+                android:textSize="@dimen/sp_16"
+                android:textColor="@color/black_2"
+                app:drawableEndCompat="@mipmap/side_arrow"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ivHaveBeenBefore"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
